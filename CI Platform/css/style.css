@@ -1,0 +1,65 @@
+.login-img img{
+    height: 100vh;
+    cover-fit:fit;
+}
+
+.discription {
+    text-align: center;
+    font-size: 80%;
+}
+
+.font-color{
+    color: #414141;
+}
+
+.btn{
+    border-radius: 25px;
+    border: 2px solid #F88634;
+    width: 100%;
+    padding: 1.5%;
+    color: #F88634;
+    background: #F8863400 0% 0% no-repeat padding-box;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.privacy1, .privacy2{
+    margin-top: 43.5%;
+}
+
+/* .privacy2{
+    margin-top: 43.5%;
+} */
+
+.privacy3{
+    margin-top: 32%;
+}
+
+.privacy4{
+    margin-top: 10%;
+}
+
+@media screen and (max-width:992px){
+
+    .smscreen{
+        margin-top: 5%;
+    }   
+
+    .login-img img{
+        height: auto;
+    }
+
+    .privacy1{
+        margin-top: 5%;
+    }
+
+    .privacy2, .privacy3{
+        margin-top: 10%;
+    }   
+}
+
+
+
+
