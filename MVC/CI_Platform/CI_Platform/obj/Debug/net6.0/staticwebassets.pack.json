@@ -1,695 +1,695 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CI_Platform.bundle.scp.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CI_Platform.bundle.scp.css",
       "PackagePath": "staticwebassets\\CI_Platform.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\css\\site.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\css\\style.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\favicon.ico",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\js\\popper.min.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\js\\popper.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\js\\site.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\404-Page-image.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\404-Page-image.png",
       "PackagePath": "staticwebassets\\lib\\images\\404-Page-image.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Already-volunteered.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Already-volunteered.png",
       "PackagePath": "staticwebassets\\lib\\images\\Already-volunteered.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Animal-welfare-_-save-birds-campaign-1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Animal-welfare-_-save-birds-campaign-1.png",
       "PackagePath": "staticwebassets\\lib\\images\\Animal-welfare-_-save-birds-campaign-1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Animal-welfare-_-save-birds-campaign.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Animal-welfare-_-save-birds-campaign.png",
       "PackagePath": "staticwebassets\\lib\\images\\Animal-welfare-_-save-birds-campaign.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png",
       "PackagePath": "staticwebassets\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png",
       "PackagePath": "staticwebassets\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png",
       "PackagePath": "staticwebassets\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png",
       "PackagePath": "staticwebassets\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png",
       "PackagePath": "staticwebassets\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png",
       "PackagePath": "staticwebassets\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png",
       "PackagePath": "staticwebassets\\lib\\images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png",
       "PackagePath": "staticwebassets\\lib\\images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png",
       "PackagePath": "staticwebassets\\lib\\images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold.png",
       "PackagePath": "staticwebassets\\lib\\images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-1.png",
       "PackagePath": "staticwebassets\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-2.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-2.png",
       "PackagePath": "staticwebassets\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-2.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-3.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-3.png",
       "PackagePath": "staticwebassets\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-3.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-4.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-4.png",
       "PackagePath": "staticwebassets\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-4.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-5.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-5.png",
       "PackagePath": "staticwebassets\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-5.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-login.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-login.png",
       "PackagePath": "staticwebassets\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability.png",
       "PackagePath": "staticwebassets\\lib\\images\\Grow-Trees-On-the-path-to-environment-sustainability.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Nourish-the-Children-in--African-country-1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Nourish-the-Children-in--African-country-1.png",
       "PackagePath": "staticwebassets\\lib\\images\\Nourish-the-Children-in--African-country-1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Nourish-the-Children-in--African-country.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Nourish-the-Children-in--African-country.png",
       "PackagePath": "staticwebassets\\lib\\images\\Nourish-the-Children-in--African-country.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Open-Volunteering-Requests.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Open-Volunteering-Requests.png",
       "PackagePath": "staticwebassets\\lib\\images\\Open-Volunteering-Requests.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Plantation-and-Afforestation-programme-1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Plantation-and-Afforestation-programme-1.png",
       "PackagePath": "staticwebassets\\lib\\images\\Plantation-and-Afforestation-programme-1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Plantation-and-Afforestation-programme.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Plantation-and-Afforestation-programme.png",
       "PackagePath": "staticwebassets\\lib\\images\\Plantation-and-Afforestation-programme.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Seats-left.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Seats-left.png",
       "PackagePath": "staticwebassets\\lib\\images\\Seats-left.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Thumbs.db",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Thumbs.db",
       "PackagePath": "staticwebassets\\lib\\images\\Thumbs.db"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Volunteering-Rank.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Volunteering-Rank.png",
       "PackagePath": "staticwebassets\\lib\\images\\Volunteering-Rank.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Voted-Missions.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\Voted-Missions.png",
       "PackagePath": "staticwebassets\\lib\\images\\Voted-Missions.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\achieved.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\achieved.png",
       "PackagePath": "staticwebassets\\lib\\images\\achieved.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\add.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\add.png",
       "PackagePath": "staticwebassets\\lib\\images\\add.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\add1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\add1.png",
       "PackagePath": "staticwebassets\\lib\\images\\add1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\arrow.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\arrow.png",
       "PackagePath": "staticwebassets\\lib\\images\\arrow.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\bell-big.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\bell-big.png",
       "PackagePath": "staticwebassets\\lib\\images\\bell-big.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\bell.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\bell.png",
       "PackagePath": "staticwebassets\\lib\\images\\bell.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\bin.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\bin.png",
       "PackagePath": "staticwebassets\\lib\\images\\bin.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\calender.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\calender.png",
       "PackagePath": "staticwebassets\\lib\\images\\calender.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\cancel.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\cancel.png",
       "PackagePath": "staticwebassets\\lib\\images\\cancel.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\cancel1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\cancel1.png",
       "PackagePath": "staticwebassets\\lib\\images\\cancel1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\checked.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\checked.png",
       "PackagePath": "staticwebassets\\lib\\images\\checked.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\cross.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\cross.png",
       "PackagePath": "staticwebassets\\lib\\images\\cross.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\deadline.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\deadline.png",
       "PackagePath": "staticwebassets\\lib\\images\\deadline.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\doc.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\doc.png",
       "PackagePath": "staticwebassets\\lib\\images\\doc.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\down.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\down.png",
       "PackagePath": "staticwebassets\\lib\\images\\down.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\drag-and-drop.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\drag-and-drop.png",
       "PackagePath": "staticwebassets\\lib\\images\\drag-and-drop.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\drop-down.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\drop-down.png",
       "PackagePath": "staticwebassets\\lib\\images\\drop-down.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\eye.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\eye.png",
       "PackagePath": "staticwebassets\\lib\\images\\eye.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\facebook.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\facebook.png",
       "PackagePath": "staticwebassets\\lib\\images\\facebook.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\filter.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\filter.png",
       "PackagePath": "staticwebassets\\lib\\images\\filter.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\gift.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\gift.png",
       "PackagePath": "staticwebassets\\lib\\images\\gift.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\graph.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\graph.png",
       "PackagePath": "staticwebassets\\lib\\images\\graph.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\grid.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\grid.png",
       "PackagePath": "staticwebassets\\lib\\images\\grid.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\heart.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\heart.png",
       "PackagePath": "staticwebassets\\lib\\images\\heart.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\heart1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\heart1.png",
       "PackagePath": "staticwebassets\\lib\\images\\heart1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\hours.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\hours.png",
       "PackagePath": "staticwebassets\\lib\\images\\hours.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\image.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\image.png",
       "PackagePath": "staticwebassets\\lib\\images\\image.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\image1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\image1.png",
       "PackagePath": "staticwebassets\\lib\\images\\image1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\image2.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\image2.png",
       "PackagePath": "staticwebassets\\lib\\images\\image2.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img.png",
       "PackagePath": "staticwebassets\\lib\\images\\img.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img1.png",
       "PackagePath": "staticwebassets\\lib\\images\\img1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img11.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img11.png",
       "PackagePath": "staticwebassets\\lib\\images\\img11.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img2.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img2.png",
       "PackagePath": "staticwebassets\\lib\\images\\img2.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img22.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img22.png",
       "PackagePath": "staticwebassets\\lib\\images\\img22.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img3.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img3.png",
       "PackagePath": "staticwebassets\\lib\\images\\img3.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img33.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\img33.png",
       "PackagePath": "staticwebassets\\lib\\images\\img33.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\info.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\info.png",
       "PackagePath": "staticwebassets\\lib\\images\\info.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\left.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\left.png",
       "PackagePath": "staticwebassets\\lib\\images\\left.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\left1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\left1.png",
       "PackagePath": "staticwebassets\\lib\\images\\left1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\linkedin.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\linkedin.png",
       "PackagePath": "staticwebassets\\lib\\images\\linkedin.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\list.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\list.png",
       "PackagePath": "staticwebassets\\lib\\images\\list.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\logo.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\logo.png",
       "PackagePath": "staticwebassets\\lib\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\mission.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\mission.png",
       "PackagePath": "staticwebassets\\lib\\images\\mission.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\my-story.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\my-story.png",
       "PackagePath": "staticwebassets\\lib\\images\\my-story.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\new-message.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\new-message.png",
       "PackagePath": "staticwebassets\\lib\\images\\new-message.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\next.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\next.png",
       "PackagePath": "staticwebassets\\lib\\images\\next.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\organization.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\organization.png",
       "PackagePath": "staticwebassets\\lib\\images\\organization.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\pdf.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\pdf.png",
       "PackagePath": "staticwebassets\\lib\\images\\pdf.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\pin.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\pin.png",
       "PackagePath": "staticwebassets\\lib\\images\\pin.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\pin1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\pin1.png",
       "PackagePath": "staticwebassets\\lib\\images\\pin1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\previous.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\previous.png",
       "PackagePath": "staticwebassets\\lib\\images\\previous.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\right-arrow.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\right-arrow.png",
       "PackagePath": "staticwebassets\\lib\\images\\right-arrow.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\right-arrow1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\right-arrow1.png",
       "PackagePath": "staticwebassets\\lib\\images\\right-arrow1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\right-arrow2.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\right-arrow2.png",
       "PackagePath": "staticwebassets\\lib\\images\\right-arrow2.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\right-white.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\right-white.png",
       "PackagePath": "staticwebassets\\lib\\images\\right-white.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\right.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\right.png",
       "PackagePath": "staticwebassets\\lib\\images\\right.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\search.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\search.png",
       "PackagePath": "staticwebassets\\lib\\images\\search.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\selected-star.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\selected-star.png",
       "PackagePath": "staticwebassets\\lib\\images\\selected-star.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\settings.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\settings.png",
       "PackagePath": "staticwebassets\\lib\\images\\settings.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\star-empty.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\star-empty.png",
       "PackagePath": "staticwebassets\\lib\\images\\star-empty.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\star.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\star.png",
       "PackagePath": "staticwebassets\\lib\\images\\star.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\twitter.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\twitter.png",
       "PackagePath": "staticwebassets\\lib\\images\\twitter.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\up.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\up.png",
       "PackagePath": "staticwebassets\\lib\\images\\up.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\user-img-large.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\user-img-large.png",
       "PackagePath": "staticwebassets\\lib\\images\\user-img-large.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\user-img.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\user-img.png",
       "PackagePath": "staticwebassets\\lib\\images\\user-img.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\user.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\user.png",
       "PackagePath": "staticwebassets\\lib\\images\\user.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\user1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\user1.png",
       "PackagePath": "staticwebassets\\lib\\images\\user1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer1.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer1.png",
       "PackagePath": "staticwebassets\\lib\\images\\volunteer1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer2.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer2.png",
       "PackagePath": "staticwebassets\\lib\\images\\volunteer2.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer3.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer3.png",
       "PackagePath": "staticwebassets\\lib\\images\\volunteer3.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer4.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer4.png",
       "PackagePath": "staticwebassets\\lib\\images\\volunteer4.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer5.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer5.png",
       "PackagePath": "staticwebassets\\lib\\images\\volunteer5.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer6.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer6.png",
       "PackagePath": "staticwebassets\\lib\\images\\volunteer6.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer7.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer7.png",
       "PackagePath": "staticwebassets\\lib\\images\\volunteer7.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer8.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer8.png",
       "PackagePath": "staticwebassets\\lib\\images\\volunteer8.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer9.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\volunteer9.png",
       "PackagePath": "staticwebassets\\lib\\images\\volunteer9.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\web.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\web.png",
       "PackagePath": "staticwebassets\\lib\\images\\web.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\xlsx.png",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\images\\xlsx.png",
       "PackagePath": "staticwebassets\\lib\\images\\xlsx.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\source\\repos\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

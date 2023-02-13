@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CI_Platform",
+    "\\CI_Platform\\bin",
+    "\\CI_Platform\\Controllers",
+    "\\CI_Platform\\Properties",
+    "\\CI_Platform\\Views",
+    "\\CI_Platform\\Views\\Home",
+    "\\CI_Platform\\wwwroot"
+  ],
+  "SelectedNode": "\\CI_Platform\\wwwroot\\js",
+  "PreviewInSolutionExplorer": false
+}
