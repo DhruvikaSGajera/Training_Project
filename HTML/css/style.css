@@ -2,6 +2,35 @@
     height: 100vh;
     cover-fit:fit;
 }
+.carousel-indicators button {
+    height: 10px !important;
+    width: 10px !important;
+    margin: 0 10px !important;
+    border-radius: 100% !important;
+}
+
+.carousel-caption 
+{
+     /* background: rgb(123,123,139);  */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), transparent);
+    position: absolute;
+    right: 15%;
+    bottom:-25px !important;
+    /* left: 15%; */
+    left: 0px;
+    width: 100%;
+    height: 32%;
+    z-index: 10;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+}
+
+.carousel-caption p, .carousel-caption h2{
+    padding: 0% 25% 0% 10%;
+}
 
 .discription {
     text-align: center;
@@ -59,7 +88,3 @@
         margin-top: 10%;
     }   
 }
-
-
-
-
