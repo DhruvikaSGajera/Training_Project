@@ -1,3 +1,9 @@
+:root {
+    --max-width: 1300px;
+}
+
+/*Styel for credential Pages*/
+
 .login-img img{
     height: 100vh;
     cover-fit:fit;
@@ -47,7 +53,7 @@
     margin:0px;
 }
 
-.btn {
+.login-btn, .reset-btn, .change-btn, .register-btn {
     border-radius: 25px;
     border: 2px solid #F88634;
     width: 100%;
@@ -76,6 +82,42 @@
     margin-top: 10%;
 }
 
+
+/*style for Landing page*/
+
+#navmaindiv{
+    max-width: var(--max-width);
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+.font_color {
+    color: #333333;
+}
+
+.search {
+    border:0px;
+    width:25rem;
+}
+
+#profileimg {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.dd-color {
+    color: #414141 !important;
+}
+.dd-color:hover {
+    color: #F88634 !important;
+    background-color: white;
+}
+
+
+/*Media Query*/
+
 @media screen and (max-width:992px){
 
     .smscreen{
@@ -94,7 +136,3 @@
         margin-top: 10%;
     }   
 }
-
-
-
-

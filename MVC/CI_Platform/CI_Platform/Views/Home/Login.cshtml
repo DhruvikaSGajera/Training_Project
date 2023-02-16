@@ -2,6 +2,8 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    Layout = "~/Views/Shared/_none.cshtml";
+
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -84,7 +86,7 @@
                                 <input type="password" class="form-control" id="Password" placeholder="Password">
                             </div>
 
-                            <button type="button" class="btn mt-2">Login</button>
+                            <button type="button" class="login-btn mt-2">Login</button>
 
                             <a asp-controller="Home" asp-action="ForgotPassword"
                                 class="link link1 d-flex justify-content-center mt-2 font-color">Lost Your Password?</a>
