@@ -1,197 +1,370 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>@ViewData["Title"] - CI_Platform</title>
-	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
-	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-	<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
-	<link rel="stylesheet" href="~/CI_Platform.styles.css" asp-append-version="true" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CI_Platform</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CI_Platform.styles.css" asp-append-version="true" />
 </head>
+
 <body>
-	<header>
-		@*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+   <header>
+        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom mb-2">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CI_Platform</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                   <div class="me-auto ms-auto">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark font-color" asp-area="" asp-controller="Home" asp-action="Index">Stories</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li class="nav-item ms-4">
+                            <div class="nav-item ms-4">
+                                 <button class=" dropdown-toggle profile" type="button" style="background-color:white;border:none;" data-bs-toggle="dropdown">
+                                 <a class="nav-link text-dark font-color" asp-area="" asp-controller="Home" asp-action="Privacy">Policy <img src="~/lib/images/drop-down.png" class=" ic-down"> </a> 
+
+
+                                   </button>
+                                   <ul class="dropdown-menu">
+                                     <li><a class="dropdown-item dd-color" href="#">My Profile</a></li>
+                                     <li><a class="dropdown-item dd-color" href="#">Volunteering Timesheet</a></li>
+                                     <li><a class="dropdown-item dd-color" href="login.html">Log Out</a></li>
+                                    </ul>
+                            </div>
                         </li>
                     </ul>
+                   </div>
+                          <div class="dropdown d-flex ms-auto me-5 ">
+                            <button class=" dropdown-toggle profile" type="button" style="background-color:white;border:none;" data-bs-toggle="dropdown">
+                             <img id="profileimg" src="~/lib/images/user-img.png">
+                               <span class="font-color">John Doe</span>
+                               <img src="~/lib/images/drop-down.png" class="ic-down">     
+                            </button>
+                         <ul class="dropdown-menu">
+                             <li><a class="dropdown-item dd-color" href="#">My Profile</a></li>
+                          <li><a class="dropdown-item dd-color" href="#">Volunteering Timesheet</a></li>
+                            <li><a class="dropdown-item dd-color" href="login.html">Log Out</a></li>
+                         </ul>
+                          </div>
+                </div>
+            </div>
+        </nav>*@
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom" style="height: 50px;">
+            <div class="container-fluid" id="navmaindiv">
+                <button class="navbar-toggler" type="button" onclick="openNav()" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class=" row" id="mobilecontent">
+                    <div class="d-flex ">
+                        <div class="col-5">
+                            <img src="~/lib/images/logo.png"/>
+                        </div>
+                        <div class="col-5">
+                            <button class="btn btn-search" type="button"> <img src="~/lib/images/search.png"> </button>
+                            <img src="~/lib/images/bell.png"/>
+                            <img id="profileimg" src="~/lib/images/user-img.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse me-auto ms-auto" id="navbarSupportedContent">
+                    <a href="javascript:void(0)" style="text-decoration:none;" onclick="closeNav()">clear All</a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a class="nav-link text-dark font-color" asp-area="" asp-controller="Home" asp-action="Index">Stories</a>
+                    <div class="dropdown dropright ">
+                        <a class="nav-link text-dark font-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Policy <i class="bi bi-chevron-right "></i> </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dd-color" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider dd-color"></li>
+                            <li><a class="dropdown-item dd-color" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                @* <div class="collapse navbar-collapse me-auto ms-auto" id="navbarSupportedContentlarge">
+                        <ul  class="navbar-nav flex-grow-1" style="margin-left:15%">
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark font-color" asp-area="" asp-controller="Home" asp-action="Index">Stories</a>
+                            </li>
+                            <li class="nav-item ms-4 dropdown">
+                                <a class="nav-link text-dark font-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Policy
+                                    <img  class="ic-down" src="~/lib/images/drop-down.png">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider dd-color"></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex me-5 ms-auto justify-content-end dropdown mx-3 my-auto">
+
+                             <img id="profileimg" src="~/lib/images/user-img.png"><a class=" nav-link text-dark font-color " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>Evan Donohue  <img class="ic-down" src="~/lib/images/drop-down.png"></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse me-auto ms-auto" id="navbarSupportedContentMobile">
+                        <ul  class="navbar-nav flex-grow-1" style="margin-left:15%">
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark font-color" asp-area="" asp-controller="Home" asp-action="Index">Stories</a>
+                            </li>
+                            <li class="nav-item ms-4 dropdown">
+                                <a class="nav-link text-dark font-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Policy
+                                    <img  class="ic-down" src="~/lib/images/drop-down.png">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider dd-color"></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <div class="d-flex me-5 ms-auto justify-content-end dropdown mx-3 my-auto">
+
+                             <img id="profileimg" src="~/lib/images/user-img.png"><a class=" nav-link text-dark font-color " href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false" font-family: Roboto;>Evan Donohue  <img class="ic-down" src="~/lib/images/drop-down.png"></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                                </ul>
+                        </div>
+                    </div>*@
+
+                <div class="collapse navbar-collapse me-auto ms-auto" id="navbarSupportedContent1">
+                    <ul  class="navbar-nav flex-grow-1" style="margin-left:15%">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-color" asp-area="" asp-controller="Home" asp-action="Index">Stories</a>
+                        </li>
+                        <li class="nav-item ms-4 dropdown">
+                            <a class="nav-link text-dark font-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Policy <img  class="ic-down" src="~/lib/images/drop-down.png"> </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item dd-color" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider dd-color"></li>
+                                <li><a class="dropdown-item dd-color" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex me-5 ms-auto justify-content-end dropdown mx-3 my-auto">
+                        <img id="profileimg" src="~/lib/images/user-img.png"><a class=" nav-link text-dark font-color " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>Evan Donohue  <img class="ic-down" src="~/lib/images/drop-down.png"></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                            <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                            <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
-		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom mb-2">
-			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-					<div class="me-auto ms-auto">
-					<ul class="navbar-nav flex-grow-1">
-						<li class="nav-item ">
-							<a class="nav-link text-dark font_color" asp-area="" asp-controller="Home" asp-action="Index">Stories</a>
-						</li>
-						<li class="nav-item ms-4">
-							<a class="nav-link text-dark font-color" asp-area="" asp-controller="Home" asp-action="Privacy">Policy</a>
-						</li>
-					</ul>
-				   </div>
-				   
-				   <div class="dropdown d-flex ms-auto me-5 ">
-					   <button class=" dropdown-toggle profile" type="button" style="background-color:white;border:none;" data-bs-toggle="dropdown">
-						   <img id="profileimg" src="~/lib/images/user-img.png">
-						   <span class="font-color">John Doe</span>
-						   <img src="~/lib/images/drop-down.png" class="ic-down">     
-					   </button>
-					   
-					   <ul class="dropdown-menu">
-						   <li><a class="dropdown-item dd-color" href="#">My Profile</a></li>
-						   <li><a class="dropdown-item dd-color" href="#">Volunteering Timesheet</a></li>
-						   <li><a class="dropdown-item dd-color" href="login.html">Log Out</a></li>
-					   </ul>
-					</div>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow" style="height: 50px;" id="searchnav">
+            <div class="container-fluid " id="navmaindiv">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5  d-flex flex-row">
+                    <button class="btn btn-search" type="button"><img src="~/lib/images/search.png"></button>
+                    <div class="search-bar">
+                        <input class="form-control" type="text" placeholder="Search Mission" style="border:0px;width:12rem;"aria-label="Search">
+                    </div>
+                </div>
+            </div>
 
-				</div>
-			</div>
-		</nav>*@
+            <div class="col-lg-6 col-md-7  me-5 ">
+                <div class="row" id="row">
+                    <div class="col-lg-3 col-md-2 p-0 border-start" >
+                        <div class="d-flex me-0 ">
+                            <div class="dropdown">
+                                <a class=" nav-link txt text-dark my-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> Country  <i class="bi bi-chevron-down  my-auto"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                                </ul>
 
-		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom mb-2">
-			<div class="container-fluid" id="navmaindiv">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse me-auto ms-auto" id="navbarSupportedContent">
-					<ul  class="navbar-nav flex-grow-1" style="margin-left:15%">
-						<li class="nav-item">
-							<a class="nav-link text-dark font_color" asp-area="" asp-controller="Home" asp-action="Index">Stories</a>
-						</li>
-						<li class="nav-item ms-4 dropdown">
-							<a class="nav-link text-dark font_color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Policy
-									<img  class="ic-down" src="~/lib/images/drop-down.png">
-							</a>
-							<ul class="dropdown-menu">
-								<li> <a class="dropdown-item dd-color" href="#">Action</a> </li>
-								<li> <a class="dropdown-item dd-color" href="#">Anothe action</a> </li>
-								<li> <hr class="dropdown-divider dd-color"> </li>
-								<li><a class="dropdown-item dd-color" href="#">Something else here</a> </li>
-							</ul>
-						</li>
-					</ul>
-					<div class="d-flex ms-auto justify-content-end dropdown mx-3 my-auto">
-						<img id="profileimg" src="~/lib/images/user-img.png">
-						<a class=" nav-link text-dark font_color " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>Evan Donohue  <img class="ic-down" src="~/lib/images/drop-down.png">
-						</a>
-						<ul class="dropdown-menu">
-							<li> <a class="dropdown-item dd-color" href="#">My Account</a> </li>
-							<li> <a class="dropdown-item dd-color" href="#">Volunteering Timesheet </a>	</li>
-							<li> <a class="dropdown-item dd-color" href="#">Log Out </a> </li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 p-0 border-start">
+                        <div class="d-flex me-0 justify-content-start">
+                            <div class="dropdown my-auto">
+                                <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> City  <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2  p-0 border-start">
+                        <div class="d-flex me-0 justify-content-start">
+                            <div class="dropdown my-auto">
+                                <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                       aria-expanded="false" font-family: Roboto;> Theme  <i class="bi bi-chevron-down "></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2  p-0 border-start border-end">
+                        <div class="d-flex me-0 justify-content-start">
+                            <div class="dropdown my-auto">
+                                <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> Skill  <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                                    <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar  navbar-light bg-white border-bottom box-shadow" id="searchnavmobile">
+            <div class="container-fluid " id="navmaindiv">
+                <div class="row" style="width:100%;">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="col-xs-10 ">
+                            <div class="search-bar" id="searchBar">
+                                <input class="form-control" type="text" placeholder="Search Mission" style="border:0px;"aria-label="Search">
+                            </div>
+                        </div>
+                        <div class="col-xs-2 ">
+                            <button class="navbar-toggler" type="button" onclick="openFilter()" id="filterSearch" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <img src="~/lib/images/filter.png">
+                            </button>
+                            
+                            <div class="collapse navbar-collapse me-auto ms-auto" id="FilterSupportedContent">
+                                <a href="javascript:void(0)" style="text-decoration:none;" onclick="closeFilter()">clear All</a>
+                                <a href="javascript:void(0)" class="closebtnFilter" onclick="closeFilter()">×</a>
+                                <div class="dropdown dropright "> 
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                       aria-expanded="false" font-family: Roboto;>Country  <i class="bi bi-chevron-right "></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                        <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                                        <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                                    </ul>
+                                </div>
 
-		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-2">
-			<div class="container-fluid " id="navmaindiv">
-				<div class="row">
-					<div class="col-lg-6 d-flex flex-row">
-						<button class="btn btn-search" type="button">
-							<img src="~/lib/images/search.png">
-						</button>
-						<div class="search-bar">
-							<input class="form-control search" type="text" placeholder="Search Mission.." aria-label="Search">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 me-5">
-					<div class="row" id="row">
+                                <div class="dropdown dropright ">
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                       aria-expanded="false" font-family: Roboto;> City  <i class="bi bi-chevron-right "></i>
+                                    </a>
 
-						<div class="col-lg-3 p-0  border-start" >
-							<div class="d-flex me-0 ">
-								<div class="dropdown">
-									<a class=" nav-link txt text-dark my-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> Country  <i class="bi bi-chevron-down ms-5 mt-2 my-auto"></i>
-									</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item dd-color" href="#">Action</a></li>
-										<li><a class="dropdown-item dd-color" href="#">Another </a></li>
-										<li><a class="dropdown-item dd-color" href="#">Something </a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-							
-						<div class="col-lg-3 p-0 border-start">
-							<div class="d-flex me-0 justify-content-end">
-								<div class="dropdown my-auto">
-									<a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-amily: Roboto;> City  <i class="bi bi-chevron-down ms-5 mt-2"></i>
-									</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item dd-color" href="#">Action</a></li>
-										<li><a class="dropdown-item dd-color" href="#">Another </a></li>
-										<li><a class="dropdown-item dd-color" href="#">Something </a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-3 p-0 border-start">
-							<div class="d-flex me-0 justify-content-end">
-								<div class="dropdown my-auto">
-									<a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> Theme  <i class="bi bi-chevron-down ms-5 mt-2"></i>
-									</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item dd-color" href="#">Action</a></li>
-										<li><a class="dropdown-item dd-color" href="#">Another </a></li>
-										<li><a class="dropdown-item dd-color" href="#">Something </a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 p-0 border-start border-end">
-							<div class="d-flex me-0 justify-content-end">
-								<div class="dropdown my-auto">
-									<a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> Skill  <i class="bi bi-chevron-down ms-5 mt-2"></i>
-									</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item dd-color" href="#">Action</a></li>
-										<li><a class="dropdown-item dd-color" href="#">Another </a></li>
-										<li><a class="dropdown-item dd-color" href="#">Something </a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                        <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                                        <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                                    </ul>
 
-		<main role="main">
-		@RenderBody()
-		</main>
+                                </div> 
+                                <div class="dropdown dropright ">
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                       aria-expanded="false" font-family: Roboto;>
+                                        Theme  <i class="bi bi-chevron-right "></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                        <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                                        <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="dropdown dropright ">
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                       aria-expanded="false" font-family: Roboto;>
+                                        Skill  <i class="bi bi-chevron-right "></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item dd-color" href="#">Action</a></li>
+                                        <li><a class="dropdown-item dd-color" href="#">Another </a></li>
+                                        <li><a class="dropdown-item dd-color" href="#">Something </a></li>
+                                    </ul>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+    </header>
+
+        <main role="main">
+        @RenderBody()
+        </main>
 
 
-	@*<footer class="border-top footer text-muted">
+    <footer class=" footer text-muted">
         <div class="container">
-            &copy; 2023 - CI_Platform - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+             <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
         </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    </footer>*@
-	<script src="~/lib/jquery/dist/jquery.min.js"></script>
-	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="~/js/site.js" asp-append-version="true"></script>
-	@await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+function openNav() {
+  document.getElementById("navbarSupportedContent").style.display = "block";
+  document.getElementById("searchnavmobile").style.display = "none";
+  document.getElementById("navbarSupportedContent").style.marginLeft = "250px";
+}
+function openFilter() {
+  document.getElementById("FilterSupportedContent").style.display = "block";
+  document.getElementById("navbarSupportedContent").style.display = "none";
+  document.getElementById("searchBar").style.display = "none";
+  document.getElementById("FilterSupportedContent").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("navbarSupportedContent").style.display = "none";
+  document.getElementById("searchnavmobile").style.display = "block";
+  document.getElementById("navbarSupportedContent").style.marginLeft = "250px";
+}
+
+function closeFilter() {
+  document.getElementById("FilterSupportedContent").style.display = "none";
+  document.getElementById("searchBar").style.display = "block";
+  document.getElementById("FilterSupportedContent").style.marginLeft = "250px";
+}
+</script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
+
+
 </html>
