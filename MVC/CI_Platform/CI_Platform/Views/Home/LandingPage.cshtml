@@ -7,111 +7,656 @@
 
 <style>
     .card {
-margin-bottom: 1rem;
-}
+        margin-bottom: 1rem;
+    }
 
-.list-view .row > [class*=col-] {
-max-width: 100%;
-flex: 0 0 100%;
-}
-.list-view .card {
-flex-direction: row;
-}
-@@media (max-width: 575.98px) {
-.list-view .card {
-flex-direction: column;
-}
-}
-.list-view .card > .card-img-top {
-width: auto;
-}
-.list-view .card .card-body {
-display: inline-block;
-}
-.cardbtn {
-    border: 1px solid #fd7e14;
-    border-radius: 22px;
-}
+    .list-view .row > [class*=col-] {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .card-img-top{
+        height: 35rem !important;
+    }
+    
+    .list-view .card {
+        flex-direction: row;
+    }
+    
+    @@media (max-width: 575.98px) {
+        .list-view .card {
+        flex-direction: column;
+        }
+    }
+    
+    .list-view .card > .card-img-top {
+        width: auto;
+    }
+    
+    .list-view .card .card-body {
+        display: inline-block;
+    }
+
+    .cardbtn {
+        border: 1px solid #fd7e14;
+        border-radius: 22px;
+    }
 
     .cardbtn span {
         color: #fd7e14;
     }
 
-.star {
-    height: 1rem;
-    width: 1rem;
-}
+    .star {
+        height: 1rem;
+        width: 1rem;
+    }
 
-.rule {
-    display: flex;
-    flex-direction: row;
-}
+    .rule {
+        display: flex;
+        flex-direction: row;
+    }
 
+    hr {
+        flex: 1;
+        border: none;
+        height: 2px;
+        background: black;
+    }
 
-hr {
-    flex: 1;
-    border: none;
-    height: 2px;
-    background: black;
-}
+    .seat {
+        font-size: 0.7rem;
+    }
 
-.seat {
-    font-size: 0.7rem;
-}
+    .hrbtn-img {
+        background-color: white !important;
+        border: none;
+        border-radius: 22px;
+        color: #414141;
+        z-index:1;
+    }
 
-.hrbtn-img {
-    background-color: white !important;
-    border: none;
-    border-radius: 22px;
-    color: #414141;
-    z-index:1;
-}
+    .hrbtn {
+        background-color: white !important;
+        border: 0.1rem solid rgb(184, 184, 184);
+        border-radius: 22px;
+        color: #414141;
+        font-size:.8rem;
 
-.hrbtn {
-    background-color: white !important;
-    border: 0.1rem solid rgb(184, 184, 184);
-    border-radius: 22px;
-    color: #414141;
-    font-size:.8rem;
+    }
 
-}
-
-.img-btn {
-    background: #000000 0% 0% no-repeat padding-box;
-    opacity: 0.5;
-    border-radius: 18px;
-    width: fit-content;
-    padding: 0 6px;
-    width: 6rem;
-    height: 2rem;
-    margin-left: -7rem;
-    margin-top: 1rem !important;
-}
+    .img-btn {
+        background: #000000 0% 0% no-repeat padding-box;
+        opacity: 0.5;
+        border-radius: 18px;
+        width: fit-content;
+        padding: 0 6px;
+        width: 6rem;
+        height: 2rem;
+        margin-left: -7rem;
+        margin-top: 1rem !important;
+    }
 
     .img-btn p {
         color: #FFFFFF;
     }
 
-.img-btn-2 {
-    background: #000000 0% 0% no-repeat padding-box;
-    opacity: 0.5;
-    border-radius: 50%;
-    width: fit-content;
-    margin-left: -3rem;
-    margin-top: 10rem !important;
-}
+    .img-btn-2 {
+        background: #000000 0% 0% no-repeat padding-box;
+        opacity: 0.5;
+        border-radius: 50%;
+        width: fit-content;
+        margin-left: -3rem;
+        margin-top: 10rem !important;
+    }
 
-.img-btn-3 {
-    background: #000000 0% 0% no-repeat padding-box;
-    opacity: 0.5;
-    border-radius: 50%;
-    width: fit-content;
-    margin-left: -3rem;
-    margin-top: 13rem !important;
-}
+    .img-btn-3 {
+        background: #000000 0% 0% no-repeat padding-box;
+        opacity: 0.5;
+        border-radius: 50%;
+        width: fit-content;
+        margin-left: -3rem;
+        margin-top: 13rem !important;
+    }
 
 </style>
+<div class="ms-5 me-3 d-flex flex-row justify-content-end" id="navmaindiv">
+        <div class="filters-section d-flex align-items-end flex-wrap justify-content-end">
+
+            </div>
+          <span class="filter-list  ps-3 pe-1 me-2 " id="ClearBtn" style="margin-top:2%;display:none;">Clear All<button class="filter-close-button" id="clearbutton">&times;</button></span>   
+    </div>
+    <br />
     <div class="ms-5" id="navmaindiv"> 
+    <div>
+        <div class="d-flex flex-row justify-content-between ">
+        <div class="d-flex ms-5" id="heading">
+        <h4>Explore</h4>
+        <h3><b>72 Missions</b></h3>
+        </div>
+        <div class="me-3" id="sortByDropdown">
+                        <div class="dropdown" id="sortByDropdown">
+              <button class="dropdown-toggle" type="button" style="background-color:white;" data-toggle="dropdown">Sort By
+              <i class="bi bi-chevron-down "></i></button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item dd-color"><a href="#">Menu-1</a></li>
+                <li class="dropdown-item dd-color"><a href="#">Menu-2</a></li>
+                <li class="dropdown-item dd-color"><a href="#">Menu-3</a></li>
+              </ul>
+              <button class="btn-grid navbar-toggler" type="button" onclick="gridView()"id="filterSearch" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="~/lib/images/grid.png">
+                    </button>
+                    <button class="btn-list navbar-toggler" type="button" onclick="listView()" id="filterSearch" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="~/lib/images/list.png">
+                    </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <br />
+
+    <div class="container grid-container">
+<div class="row">
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
+        <div class="d-inline position-relative">
+            <img src="~/lib/images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top"
+                 alt="Mission Image">
+            <button class="img-btn position-absolute" type="button"><img src="~/lib/images/pin.png" class="d-inline me-1" /><p class="d-inline">Toronto</p></button>
+                 <button class="img-btn-2 position-absolute" type="button"><img src="~/lib/images/heart.png" width="20px" height="20px" /></button>
+            <button class="img-btn-3 position-absolute" type="button"><img src="~/lib/images/eye.png" width="20px" height="20px" /></button>
+
+        </div>
+
+        <div class="rule" style="margin-top:-20px !important;">
+            <hr>
+            <button class="hrbtn-img" id="hrbtn">Enviroment</button>
+            <hr>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Grow Trees-On the path to environment sustainability</h5>
+            <p class="card-text text-secondary">
+                Some quick example text to build on the card title and make up
+                the bulk
+                of the card's content.
+            </p>
+
+            <div class="d-flex">
+                <div class="card-text">Tree Canada</div>
+                <div class="ms-auto">
+                    <img src="~/lib/images/star.png" class="star">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                </div>
+            </div>
+
+            <div class="rule mt-1">
+                <hr>
+                <button class="hrbtn">From 10/01/2019 until 25/02/2019</button>
+                <hr>
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                    <img src="~/lib/images/Seats-left.png" alt="" class="" height="30px" width="30px">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="d-inline mb-0 pt-2">10</p>
+                        <p class="seat">Seats Left</p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center">
+                    <img src="~/lib/images/deadline.png" height="33px" width="33px" alt="">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="d-inline mb-0 pt-2">12/03/2023 </p>
+                        <p class="seat">Deadline</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn cardbtn mx-auto ">
+                    <span>Apply</span> <img class="ms-1"
+                                            src="~/lib/images/right-arrow.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
+        <div class="d-inline position-relative">
+            <img src="~/lib/images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
+                 alt="Mission Image">
+            <button class="img-btn position-absolute" type="button"><img src="~/lib/images/pin.png" class="d-inline me-1" /><p class="d-inline">Malbourne</p></button>
+                 <button class="img-btn-2 position-absolute" type="button"><img src="~/lib/images/heart.png" width="20px" height="20px" /></button>
+            <button class="img-btn-3 position-absolute" type="button"><img src="~/lib/images/eye.png" width="20px" height="20px" /></button>
+
+        </div>
+
+        <div class="rule" style="margin-top:-20px !important;">
+            <hr>
+            <button class="hrbtn-img" id="hrbtn">Children</button>
+            <hr>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Grow Trees-On the path to environment sustainability</h5>
+            <p class="card-text text-secondary">
+                Some quick example text to build on the card title and make up
+                the bulk
+                of the card's content.
+            </p>
+
+            <div class="d-flex">
+                <div class="card-text">Australia Paradise</div>
+                <div class="ms-auto">
+                    <img src="~/lib/images/star.png" class="star">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                </div>
+            </div>
+
+            <div class="rule mt-1">
+                <hr>
+                <button class="hrbtn">From 10/01/2019 until 25/02/2019</button>
+                <hr>
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                    <img src="~/lib/images/Already-volunteered.png" alt="" class="" height="30px" width="30px">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="d-inline mb-0 pt-2">250</p>
+                        <p class="seat">Already volunteered</p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center">
+                    <img src="~/lib/images/deadline.png" height="33px" width="33px" alt="">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="d-inline mb-0 pt-2">09/01/2023 </p>
+                        <p class="seat">Deadline</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn cardbtn mx-auto ">
+                    <span>Apply</span> <img class="ms-1"
+                                             src="~/lib/images/right-arrow.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
+        <div class="d-inline position-relative">
+            <img src="~/lib/images/Nourish-the-Children-in--African-country-1.png" class="card-img-top"
+                 alt="Mission Image">
+            <button class="img-btn position-absolute" type="button"><img src="~/lib/images/pin.png" class="d-inline me-1" /><p class="d-inline">Barcelona</p></button>
+                 <button class="img-btn-2 position-absolute" type="button"><img src="~/lib/images/heart.png" width="20px" height="20px" /></button>
+            <button class="img-btn-3 position-absolute" type="button"><img src="~/lib/images/eye.png" width="20px" height="20px" /></button>
+
+        </div>
+
+        <div class="rule" style="margin-top:-20px !important;">
+            <hr>
+            <button class="hrbtn-img" id="hrbtn">Nutrition</button>
+            <hr>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Nourish the Children in African Country</h5>
+            <p class="card-text text-secondary">
+                Some quick example text to build on the card title and make up
+                the bulk
+                of the card's content.
+            </p>
+
+            <div class="d-flex">
+                <div class="card-text">The Hunger</div>
+                <div class="ms-auto">
+                    <img src="~/lib/images/star.png" class="star">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                </div>
+            </div>
+
+            <div class="rule mt-1">
+                <hr>
+                <button class="hrbtn">Ongoing Opportunity</button>
+                <hr>
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                    <img src="~/lib/images/Seats-left.png" alt="" class="" height="30px" width="30px">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="d-inline mb-0 pt-2">10</p>
+                        <p class="seat">Seats Left</p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center">
+                    <img src="~/lib/images/deadline.png" height="33px" width="33px" alt="">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="d-inline mb-0 pt-2">12/03/2023 </p>
+                        <p class="seat">Deadline</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn cardbtn mx-auto ">
+                    <span>Apply</span> <img class="ms-1"
+                                            src="~/lib/images/right-arrow.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
+        <div class="d-inline position-relative">
+            <img src="~/lib/images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png" class="card-img-top"
+                 alt="Mission Image">
+            <button class="img-btn position-absolute" type="button"><img src="~/lib/images/pin.png" class="d-inline me-1" /><p class="d-inline">London</p></button>
+                 <button class="img-btn-2 position-absolute" type="button"><img src="~/lib/images/heart.png" width="20px" height="20px" /></button>
+            <button class="img-btn-3 position-absolute" type="button"><img src="~/lib/images/eye.png" width="20px" height="20px" /></button>
+
+        </div>
+
+        <div class="rule" style="margin-top:-20px !important;">
+            <hr>
+            <button class="hrbtn-img" id="hrbtn">Environment</button>
+            <hr>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">CSR initiative stans for coffe and Frmer Equity</h5>
+            <p class="card-text text-secondary">
+                Some quick example text to build on the card title and make up
+                the bulk
+                of the card's content.
+            </p>
+
+            <div class="d-flex">
+                <div class="card-text">CSE Network</div>
+                <div class="ms-auto">
+                    <img src="~/lib/images/star.png" class="star">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                </div>
+            </div>
+
+            <div class="rule mt-1">
+                <hr>
+                <button class="hrbtn">From 10/01/2019 until 25/02/2019</button>
+                <hr>
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                    <img src="~/lib/images/Already-volunteered.png" alt="" class="" height="30px" width="30px">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="d-inline mb-0 pt-2">250</p>
+                        <p class="seat">Alredy volunteered</p>
+                    </div>
+                </div>
+
+                        @*<div class="d-flex flex-row align-items-center">
+                    <img src="~/lib/images/deadline.png" height="33px" width="33px" alt="">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="d-inline mb-0 pt-2">12/03/2023 </p>
+                        <p class="seat">Deadline</p>
+                    </div>
+
+                </div>*@
+
+            </div>
+
+            <div class="text-center">
+                <a  asp-action="RelatedMissionPage" asp-controller="Home" class="btn cardbtn mx-auto ">
+                    <span>Apply</span> <img class="ms-1"
+                                            src="~/lib/images/right-arrow.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
+        <div class="d-inline position-relative">
+            <img src="~/lib/images/Animal-welfare-&-save-birds-campaign.png" class="card-img-top"
+                 alt="Mission Image">
+            <button class="img-btn position-absolute" type="button"><img src="~/lib/images/pin.png" class="d-inline me-1" /><p class="d-inline">Cape Town</p></button>
+                 <button class="img-btn-2 position-absolute" type="button"><img src="~/lib/images/heart.png" width="20px" height="20px" /></button>
+            <button class="img-btn-3 position-absolute" type="button"><img src="~/lib/images/eye.png" width="20px" height="20px" /></button>
+
+        </div>
+
+        <div class="rule" style="margin-top:-20px !important;">
+            <hr>
+            <button class="hrbtn-img" id="hrbtn">Animals</button>
+            <hr>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Animal welfare & Save birds campaign</h5>
+            <p class="card-text text-secondary">
+                Some quick example text to build on the card title and make up
+                the bulk
+                of the card's content.
+            </p>
+
+            <div class="d-flex">
+                <div class="card-text">JR Foundation</div>
+                <div class="ms-auto">
+                    <img src="~/lib/images/star.png" class="star">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                </div>
+            </div>
+
+            <div class="rule mt-1">
+                <hr>
+                <button class="hrbtn">From 10/01/2019 until 25/02/2019</button>
+                <hr>
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                    <img src="~/lib/images/Seats-left.png" alt="" class="" height="30px" width="30px">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="d-inline mb-0 pt-2">10</p>
+                        <p class="seat">Seats Left</p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row align-items-center" style="width:53%">
+                    <img src="~/lib/images/achieved.png" height="33px" width="33px" alt="">
+
+                    <div class="d-flex flex-column ms-2 " style="margin-top:9%">
+                        <div class="progress">
+                                  <div id="one" class="progress-bar" style="background-color: #F88634 !important;width: 60%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+
+                                  </div>
+                                </div>
+                        <p class="seat">8000 achieved</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn cardbtn mx-auto ">
+                    <span>Apply</span> <img class="ms-1"
+                                            src="~/lib/images/right-arrow.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
+        <div class="d-inline position-relative">
+            <img src="~/lib/images/Plantation-and-Afforestation-programme-1.png" class="card-img-top"
+                 alt="Mission Image">
+            <button class="img-btn position-absolute" type="button"><img src="~/lib/images/pin.png" class="d-inline me-1" /><p class="d-inline">Paris</p></button>
+                 <button class="img-btn-2 position-absolute" type="button"><img src="~/lib/images/heart.png" width="20px" height="20px" /></button>
+            <button class="img-btn-3 position-absolute" type="button"><img src="~/lib/images/eye.png" width="20px" height="20px" /></button>
+
+        </div>
+
+        <div class="rule" style="margin-top:-20px !important;">
+            <hr>
+            <button class="hrbtn-img" id="hrbtn">Health</button>
+            <hr>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Plantation and Afforestation programme</h5>
+            <p class="card-text text-secondary">
+                Some quick example text to build on the card title and make up
+                the bulk
+                of the card's content.
+            </p>
+
+            <div class="d-flex">
+                <div class="card-text">Amaze Doctors</div>
+                <div class="ms-auto">
+                    <img src="~/lib/images/star.png" class="star">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                    <img src="~/lib/images/star-empty.png" class="star" alt="">
+                </div>
+            </div>
+
+            <div class="rule mt-1">
+                <hr>
+                <button class="hrbtn">Plant 10,000 Trees</button>
+                <hr>
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-between">
+                        @*<div class="d-flex flex-row align-items-center">
+                    <img src="~/lib/images/Seats-left.png" alt="" class="" height="30px" width="30px">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="d-inline mb-0 pt-2">10</p>
+                        <p class="seat">Seats Left</p>
+                    </div>
+                </div>*@
+
+                 <div class="d-flex flex-row align-items-center" style="width:53%">
+                    <img src="~/lib/images/achieved.png" height="33px" width="33px" alt="">
+
+                    <div class="d-flex flex-column ms-2 " style="margin-top:9%">
+                        <div class="progress">
+                                  <div id="one" class="progress-bar" style="background-color: #F88634 !important;width: 60%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+
+                                  </div>
+                                </div>
+                        <p class="seat">8000 achieved</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn cardbtn mx-auto ">
+                    <span>Apply</span> <img class="ms-1"
+                                            src="~/lib/images/right-arrow.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+<nav aria-label="...">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<script>
+function showList(e) {
+    var $gridCont = $(".grid-container");
+
+    // e.preventDefault();
+    $(".hrbtn-img").addClass("hr-btn");   
+    $(".card-img-top").addClass("card-img-top-listview"); 
+    $gridCont.hasClass("list-view") ? $gridCont.addClass("list-view") : $gridCont.addClass("list-view");
+    }
+    function gridList(e) {
+    var $gridCont = $(".grid-container");
+    e.preventDefault();
+    $(".hrbtn-img").removeClass("hr-btn"); 
+    $(".card-img-top").removeClass("card-img-top-listview"); 
+    $gridCont.removeClass("list-view");
+    }
+
+    $(document).on("click", ".btn-grid", gridList);
+    $(document).on("click", ".btn-list", showList);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @*<div class="ms-5" id="navmaindiv"> 
     <div>
         <div class="d-flex flex-row justify-content-between ">
         <div class="d-flex ms-5" id="heading">
@@ -137,7 +682,7 @@ hr {
         </div>
         </div>
     </div>
-    </div>
+    </div>*@
     @*<div class="ms-5" id="navmaindiv">
         <div class="row">
   <div class="column" style="background-color:#aaa;">
@@ -501,7 +1046,7 @@ hr {
 </div>
 
     </div>*@
-    <div class="container grid-container">
+    @*<div class="container grid-container">
 <div class="row">
 <div class="col-12 col-md-6 col-lg-4">
     <div class="card">
@@ -949,4 +1494,4 @@ function showList(e) {
     
     $(document).on("click", ".btn-grid", gridList);
     $(document).on("click", ".btn-list", showList);
-</script>
+</script>*@
