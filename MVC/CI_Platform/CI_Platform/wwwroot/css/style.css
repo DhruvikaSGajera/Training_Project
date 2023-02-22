@@ -658,7 +658,7 @@ hr {
     background-color: white;
 }
 
-input[type=checkbox] {
+.form-check-input {
     accent-color: #F88634;
 }
 
