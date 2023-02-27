@@ -1,562 +1,4 @@
-﻿@*<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>@ViewData["Title"] - CI_Platform</title>
-	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-	<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
-	<link rel="stylesheet" href="~/CI_Platform.styles.css" asp-append-version="true" />
-</head>
-
-<body>
-   <header>*@
-
-		@*<div class="collapse navbar-collapse me-auto ms-auto" id="navbarSupportedContent">
-                    <a href="javascript:void(0)" style="text-decoration:none;" onclick="closeNav()">clear All</a>
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>*@
-		@*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom" style="height: 50px;">
-			<div class="container-fluid d-flex flex-row justify-content-between" >
-				<div class="d-flex flex-row">
-					<button class="navbar-toggler ms-2" type="button"  data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="img-logo-mobile">
-					   <img src="~/lib/images/logo.png" width="60px" height="20px"/>
-					</div>
-				</div>
-				<div class=" row" id="mobilecontent">
-					<div class="d-flex ">
-						<div class="">
-							<button class="btn btn-search" type="button"><img src="~/lib/images/search.png"></button>
-							<img src="~/lib/images/bell.png"/>
-							<img id="profileimg" src="~/lib/images/user-img.png">
-
-						</div>
-					</div>
-				</div>
-				<div class="offcanvas offcanvas-start" id="navbarSupportedContent"
-
-					<div class="offcanvas-header">
-						<h2 class="offcanvas-title" style="color:blue;">Clear All</h2>
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-					</div>
-
-					<a class="nav-link text-dark font-color" asp-area="" asp-controller="Home" asp-action="Index">Stories</a>
-					<div class="dropdown dropright ">
-						<a class="nav-link text-dark font-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Policy <i class="bi bi-chevron-right "></i> </a>
-
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item dd-color" href="#">Another action</a></li>
-							<li><hr class="dropdown-divider dd-color"></li>
-							<li><a class="dropdown-item dd-color" href="#">Something else here</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="collapse navbar-collapse me-auto ms-auto" id="navbarSupportedContent1">
-					<ul  class="navbar-nav flex-grow-1" style="margin-left:15%">
-						<li class="nav-item">
-							<a class="nav-link text-dark font-color" asp-area="" asp-controller="Home" asp-action="Index">Stories</a>
-						</li>
-						<li class="nav-item ms-4 dropdown">
-							<a class="nav-link text-dark font-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Policy <img  class="ic-down" src="~/lib/images/drop-down.png"> </a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item dd-color" href="#">Another action</a></li>
-								<li><hr class="dropdown-divider dd-color"></li>
-								<li><a class="dropdown-item dd-color" href="#">Something else here</a></li>
-							</ul>
-						</li>
-					</ul>
-					<div class="d-flex me-5 ms-auto justify-content-end dropdown mx-3 my-auto">
-						<img id="profileimg" src="~/lib/images/user-img.png">
-						<a class=" nav-link text-dark font-color " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>Evan Donohue  <img class="ic-down" src="~/lib/images/drop-down.png"></a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item dd-color" href="#">Action</a></li>
-							<li><a class="dropdown-item dd-color" href="#">Another </a></li>
-							<li><a class="dropdown-item dd-color" href="#">Something </a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>*@
-
-		@* Search navbar*@
-
-		@*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow" style="height: 50px;" id="searchnav">
-			<div class="container-fluid " id="navmaindiv">
-				<div class="row">
-					<div class="col-lg-6 col-md-5  d-flex flex-row">
-					<button class="btn btn-search" type="button"><img src="~/lib/images/search.png"></button>
-					<div class="search-bar">
-						<input class="form-control" type="text" placeholder="Search Mission" style="border:0px;width:12rem;"aria-label="Search">
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-6 col-md-7  me-5 ">
-				<div class="row" id="row">
-					<div class="col-lg-3 col-md-2 p-0 border-start" >
-						<div class="d-flex me-0 ">
-							<div class="dropdown">
-								<a class=" nav-link txt text-dark my-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> Country  <i class="bi bi-chevron-down  my-auto"></i>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="India" id = "1" />
-												<label class="form-check-label" for="1">India</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="USA" id = "2" />
-												<label class="form-check-label" for="2">USA</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="UK" id = "3" />
-												<label class="form-check-label" for="3">UK</label>
-											</div>
-										 </a></li>
-								</ul>
-
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-2 p-0 border-start">
-						<div class="d-flex me-0 justify-content-start">
-							<div class="dropdown my-auto">
-								<a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> City  <i class="bi bi-chevron-down"></i>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="Ahmedabad" id = "1" />
-												<label class="form-check-label" for="1">Ahmedabad</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="London" id = "2" />
-												<label class="form-check-label" for="2">London</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="America" id = "3"  />
-												<label class="form-check-label" for="3">America</label>
-											</div>
-										 </a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-2  p-0 border-start">
-						<div class="d-flex me-0 justify-content-start">
-							<div class="dropdown my-auto">
-								<a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                                       aria-expanded="false" font-family: Roboto;> Theme  <i class="bi bi-chevron-down "></i>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="Environment" id = "1" />
-												<label class="form-check-label" for="1">Environment</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="Health" id = "2"  />
-												<label class="form-check-label" for="2">Health</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="Animals" id = "3" />
-												<label class="form-check-label" for="3">Animals</label>
-											</div>
-										 </a></li>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-2  p-0 border-start border-end">
-						<div class="d-flex me-0 justify-content-start">
-							<div class="dropdown my-auto">
-								<a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> Skill  <i class="bi bi-chevron-down"></i>
-								</a>
-								<ul class="dropdown-menu">
-									 <li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="LeaderShip" id = "1" />
-												<label class="form-check-label" for="1">Leadership</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="Reading" id = "2" />
-												<label class="form-check-label" for="2">Reading</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="Writing" id = "3" />
-												<label class="form-check-label" for="3">Writing</label>
-											</div>
-										 </a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<nav class="navbar  navbar-light bg-white border-bottom box-shadow" id="searchnavmobile">
-			<div class="container-fluid " id="navmaindiv">
-				<div class="row" style="width:100%;">
-					<div class="d-flex flex-row justify-content-between">
-
-						<div class="col-xs-10 ">
-							<div class="search-bar" id="searchBar">
-								<input class="form-control" type="text" placeholder="Search Mission" style="border:0px;"aria-label="Search">
-							</div>
-						</div>
-
-						<div class="col-xs-2 ">
-							<button class="navbar-toggler" type="button" id="filterSearch" data-bs-toggle="offcanvas" data-bs-target="#FilterSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <img src="~/lib/images/filter.png">
-							</button>
-
-							<div class="offcanvas offcanvas-end" id="FilterSupportedContent">
-								<div class="offcanvas-header">
-									<h2 class="offcanvas-title style="color:#313131">Clear All</h2>
-									<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-								</div>
-
-								<div class="dropdown dropright "> 
-									<a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> Country <i class="bi bi-chevron-right "></i>
-									</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="India" id = "1" />
-												<label class="form-check-label" for="1">India</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="USA" id = "2" />
-												<label class="form-check-label" for="2">USA</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="UK" id = "3" />
-												<label class="form-check-label" for="3">UK</label>
-											</div>
-										 </a></li>
-									</ul>
-								</div>
-
-								<div class="dropdown dropright ">
-									<a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;> City <i class="bi bi-chevron-right "></i>
-									</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="Ahmedabad" id = "1" />
-												<label class="form-check-label" for="1">Ahmedabad</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="London" id = "2" />
-												<label class="form-check-label" for="2">London</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="America" id = "3" />
-												<label class="form-check-label" for="3">America</label>
-											</div>
-										 </a></li>
-									</ul>
-
-								</div> 
-								<div class="dropdown dropright ">
-									<a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>
-										Theme  <i class="bi bi-chevron-right "></i>
-									</a>
-
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="Environment" id = "1" />
-												<label class="form-check-label" for="1">Environment</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="Health" id = "2" />
-												<label class="form-check-label" for="2">Health</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="Animals" id = "3"  />
-												<label class="form-check-label" for="3">Animals</label>
-											</div>
-										 </a></li>
-									</ul>
-
-								</div>
-								<div class="dropdown dropright ">
-									<a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>
-										Skill  <i class="bi bi-chevron-right "></i>
-									</a>
-
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input, hobbies_class" type="checkbox" value="LeaderShip" id = "1"  />
-												<label class="form-check-label" for="1">Leadership</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input,hobbies_calss" type="checkbox" value="Reading" id = "2"  />
-												<label class="form-check-label" for="2">Reading</label>
-											</div>
-										</a></li>
-										<li><a class="dropdown-item dd-color" href="#">
-											<div class="form-check">
-												<input class="form-check-input,hobbies_class" type="checkbox" value="Writing" id = "3"  />
-												<label class="form-check-label" for="3">Writing</label>
-											</div>
-										 </a></li>
-									</ul>
-								</div>
-							</div>   
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-
-	</header>
-
-		<main role="main">
-		@RenderBody()
-		</main>
-
-
-	<footer class=" footer text-muted">
-		<div class="container">
-			 <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
-		</div>
-	</footer>
-	<script src="~/lib/jquery/dist/jquery.min.js"></script>
-	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-	<script src="~/js/site.js" asp-append-version="true"></script>
-	<script>
-	function openNav() {
-	  document.getElementById("navbarSupportedContent").style.display = "block";
-	  document.getElementById("searchnavmobile").style.display = "none";
-	  document.getElementById("navbarSupportedContent").style.marginLeft = "250px";
-	}
-	function openFilter() {
-	  document.getElementById("FilterSupportedContent").style.display = "block";
-	  document.getElementById("navbarSupportedContent").style.display = "none";
-	  document.getElementById("searchBar").style.display = "none";
-	  document.getElementById("FilterSupportedContent").style.marginLeft = "250px";
-	}
-
-	function closeNav() {
-	  document.getElementById("navbarSupportedContent").style.display = "none";
-	  document.getElementById("searchnavmobile").style.display = "block";
-	  document.getElementById("navbarSupportedContent").style.marginLeft = "250px";
-	}
-
-	function closeFilter() {
-	  document.getElementById("FilterSupportedContent").style.display = "none";
-	  document.getElementById("searchBar").style.display = "block";
-	  document.getElementById("FilterSupportedContent").style.marginLeft = "250px";
-	}
-
-	let filtersSection = document.querySelector(".filters-section");
-	var filterList = document.querySelector(".filter-list");
-	var cbs = document.querySelectorAll('input[type=checkbox]');
-	for(var i = 0; i < cbs.length; i++) {
-		cbs[i].addEventListener('change', function() {
-			if (this.checked) { 
-				addElement(this, this.value);
-			}
-			else {
-				removeElement(this.value);
-				console.log("unchecked");
-			}
-		});
-	}
-
-	clearbutton.onclick = () => {
-	  const myNode = document.querySelector(".filters-section");
-
-	  while (myNode.lastElementChild) {
-		myNode.removeChild(myNode.lastElementChild);
-	  }
-	  for (const checkbox of document.querySelectorAll('input[type=checkbox]')) {
-		//iterating over all matched elements
-		checkbox.checked = false //for unselection
-		document.getElementById("ClearBtn").style.display = "none";
-	  }
-	}
-
-	function addElement(current, value) {
-		let filtersSection = document.querySelector(".filters-section");
-		let clearAllButton = document.getElementById("ClearBtn");
-		let createdTag = document.createElement('span');
-		createdTag.classList.add('filter-list');
-		createdTag.classList.add('ps-3');
-		createdTag.classList.add('pe-1');
-		createdTag.classList.add('me-2');
-		createdTag.innerHTML = value;
-
-		createdTag.setAttribute('id', value);
-		let crossButton = document.createElement('button');
-		crossButton.classList.add("filter-close-button");
-		let cross = '&times;'
-
-		crossButton.addEventListener('click', function () {
-			let elementToBeRemoved = document.getElementById(value);
-
-			console.log(elementToBeRemoved);
-			console.log(current);
-			elementToBeRemoved.remove();
-
-			current.checked = false;
-
-			 if (filtersSection.hasChildNodes()) {
-				document.getElementById("ClearBtn").style.display = "block";
-			 } 
-			 else {
-				document.getElementById("ClearBtn").style.display = "none";
-			 }
-		})
-
-		crossButton.innerHTML = cross;
-
-		// let crossButton = '&times;'
-
-		createdTag.appendChild(crossButton);
-		filtersSection.appendChild(createdTag);
-
-		 if (filtersSection.hasChildNodes()) {
-			document.getElementById("ClearBtn").style.display = "block";
-		 } 
-		 else {
-			document.getElementById("ClearBtn").style.display = "none";
-		 }
-	}
-
-	function ClearAllElement() {
-		var filtersSection = document.querySelector(".filters-section");
-
-		for(var i = 0; i < filtersSection.length; i++) {
-			filtersSection.pop();
-		}
-	}
-
-	function removeElement(value) {
-
-		let filtersSection = document.querySelector(".filters-section");
-		let clearAllButton = document.getElementById("ClearBtn");
-		let elementToBeRemoved = document.getElementById(value);
-		document.getElementById(value).checked = false;
-		filtersSection.removeChild(elementToBeRemoved);
-		if (filtersSection.hasChildNodes()) {
-		   alert("remove");
-		   document.getElementById("ClearBtn").style.display = "block";
-		} 
-		else {
-			document.getElementById("ClearBtn").style.display = "none";
-		}
-	}
-
-	</script>*@
-	@*<script>
-        var checkboxes = document.querySelectorAll(".checkbox");
-        let filtersSection = document.querySelector(".filters-section");
-        var listArray = [];
-        var filterList = document.querySelector(".filter-list");
-        var len = listArray.length;
-        for (var checkbox of checkboxes) {
-            checkbox.addEventListener("click", function () {
-                if (this.checked == true) {
-                    addElement(this, this.value);
-                }
-                else {
-
-                    removeElement(this.value);
-                    console.log("unchecked");
-                }
-            })
-        }
-
-        function addElement(current, value) {
-            let filtersSection = document.querySelector(".filters-section");
-
-            let createdTag = document.createElement('span');
-            createdTag.classList.add('filter-list');
-            createdTag.classList.add('ps-3');
-            createdTag.classList.add('pe-1');
-            createdTag.classList.add('me-2');
-            createdTag.innerHTML = value;
-
-            createdTag.setAttribute('id', value);
-            let crossButton = document.createElement('button');
-            crossButton.classList.add("filter-close-button");
-            let cross = '&times;'
-
-            crossButton.addEventListener('click', function () {
-                let elementToBeRemoved = document.getElementById(value);
-
-                console.log(elementToBeRemoved);
-                console.log(current);
-                elementToBeRemoved.remove();
-
-                current.checked = false;
-            })
-
-            crossButton.innerHTML = cross;
-            // let crossButton = '&times;'
-
-            createdTag.appendChild(crossButton);
-            filtersSection.appendChild(createdTag);
-        }
-
-        function removeElement(value) {
-            let filtersSection = document.querySelector(".filters-section");
-
-            let elementToBeRemoved = document.getElementById(value);
-            filtersSection.removeChild(elementToBeRemoved);
-        }
-    </script>*@
-
-	@*@await RenderSectionAsync("Scripts", required: false)
-</body>
-
-
-</html>
-*@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -631,28 +73,20 @@
                                 <img class="ic-down" src="~/lib/images/drop-down.png">
                             </a>
                             <ul class="dropdown-menu">
-
                                 <li><a class="dropdown-item dd-color" href="#">Another action</a></li>
                                 <li><hr class="dropdown-divider dd-color"></li>
                                 <li><a class="dropdown-item dd-color" href="#">Something else here</a></li>
                             </ul>
                         </li>
-
                     </ul>
                     <div class="d-flex me-5 ms-auto justify-content-end dropdown mx-3 my-auto">
 
-                        <img id="profileimg" src="~/lib/images/user-img.png"><a class=" nav-link text-dark font-color " href="#" role="button" data-bs-toggle="dropdown"
-                                                                                aria-expanded="false" font-family: Roboto;>Evan Donohue  <img class="ic-down" src="~/lib/images/drop-down.png"></a>
-
-
+                        <img id="profileimg" src="~/lib/images/user-img.png"><a class=" nav-link text-dark font-color " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>Evan Donohue  <img class="ic-down" src="~/lib/images/drop-down.png"></a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item dd-color" href="#">Action</a></li>
                             <li><a class="dropdown-item dd-color" href="#">Another </a></li>
                             <li><a class="dropdown-item dd-color" href="#">Something </a></li>
                         </ul>
-
-
-
                     </div>
                 </div>
             </div>
@@ -673,11 +107,9 @@
                         <div class="col-lg-3 col-md-2  p-0  border-start">
                             <div class="d-flex me-0 ">
                                 <div class="dropdown">
-                                    <a class=" nav-link txt text-dark my-auto" href="#" role="button" data-bs-toggle="dropdown"
-                                       aria-expanded="false" font-family: Roboto;>
+                                    <a class=" nav-link txt text-dark my-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>
                                         Country  <i class="bi bi-chevron-down  my-auto"></i>
                                     </a>
-
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a class="dropdown-item dd-color" href="#">
@@ -704,15 +136,13 @@
                                             </a>
                                         </li>
                                     </ul>
-
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-2 p-0 border-start">
                             <div class="d-flex me-0 justify-content-start">
                                 <div class="dropdown my-auto">
-                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                                       aria-expanded="false" font-family: Roboto;>
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>
                                         City  <i class="bi bi-chevron-down"></i>
                                     </a>
 
@@ -749,8 +179,7 @@
                         <div class="col-lg-3 col-md-2  p-0 border-start">
                             <div class="d-flex me-0 justify-content-start">
                                 <div class="dropdown my-auto">
-                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                                       aria-expanded="false" font-family: Roboto;>
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>
                                         Theme  <i class="bi bi-chevron-down "></i>
                                     </a>
 
@@ -780,16 +209,13 @@
                                             </a>
                                         </li>
                                     </ul>
-
-
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-2  p-0 border-start border-end">
                             <div class="d-flex me-0 justify-content-start">
                                 <div class="dropdown my-auto">
-                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                                       aria-expanded="false" font-family: Roboto;>
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>
                                         Skill  <i class="bi bi-chevron-down"></i>
                                     </a>
 
@@ -812,7 +238,6 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-item dd-color" href="#">
-
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="writing" id="3" checked />
                                                     <label class="form-check-label" for="3">writing</label>
@@ -820,14 +245,11 @@
                                             </a>
                                         </li>
                                     </ul>
-
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </nav>
         <nav class="navbar  navbar-light bg-white border-bottom box-shadow" id="searchnavmobile">
@@ -853,8 +275,7 @@
                                 </div>
 
                                 <div class="dropdown dropright">
-                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                                       aria-expanded="false" font-family: Roboto;>
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>
                                         Country  <i class="bi bi-chevron-right "></i>
                                     </a>
 
@@ -887,8 +308,7 @@
 
                                 </div>
                                 <div class="dropdown dropright ">
-                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                                       aria-expanded="false" font-family: Roboto;>
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>
                                         City  <i class="bi bi-chevron-right "></i>
                                     </a>
 
@@ -921,8 +341,7 @@
 
                                 </div>
                                 <div class="dropdown dropright ">
-                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                                       aria-expanded="false" font-family: Roboto;>
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>
                                         Theme  <i class="bi bi-chevron-right "></i>
                                     </a>
 
@@ -955,8 +374,7 @@
                                     
                                 </div>
                                 <div class="dropdown dropright ">
-                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                                       aria-expanded="false" font-family: Roboto;>
+                                    <a class=" nav-link txt text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" font-family: Roboto;>
                                         Skill  <i class="bi bi-chevron-right "></i>
                                     </a>
 
@@ -979,7 +397,6 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-item dd-color" href="#">
-
                                                 <div class="form-check">
                                                     <input class="form-check-input .hobbies_class" type="checkbox" value="writing" id="3" checked />
                                                     <label class="form-check-label" for="3">writing</label>
@@ -987,11 +404,7 @@
                                             </a>
                                         </li>
                                     </ul>
-
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>
@@ -1004,7 +417,6 @@
     <main role="main">
         @RenderBody()
     </main>
-
 
     <footer class=" footer text-muted">
         <div class="container">
@@ -1066,7 +478,6 @@
             for (const checkbox of document.querySelectorAll('input[type=checkbox]')) {
                 //iterating over all matched elements
 
-
                 checkbox.checked = false //for unselection
                 document.getElementById("ClearBtn").style.display = "none";
             }
@@ -1089,7 +500,6 @@
             crossButton.classList.add("filter-close-button");
             let cross = '&times;'
 
-
             crossButton.addEventListener('click', function() {
                 let elementToBeRemoved = document.getElementById(value);
 
@@ -1105,20 +515,15 @@
                 } else {
                     document.getElementById("ClearBtn").style.display = "none";
                 }
-
-
             })
 
             crossButton.innerHTML = cross;
-
-
             // let crossButton = '&times;'
 
             createdTag.appendChild(crossButton);
             filtersSection.appendChild(createdTag);
 
             if (filtersSection.hasChildNodes()) {
-
                 document.getElementById("ClearBtn").style.display = "block";
             } else {
                 document.getElementById("ClearBtn").style.display = "none";
@@ -1132,9 +537,7 @@
             for (var i = 0; i < filtersSection.length; i++) {
                 filtersSection.pop();
             }
-
         }
-
 
         function removeElement(value) {
 
@@ -1149,89 +552,68 @@
             } else {
                 document.getElementById("ClearBtn").style.display = "none";
             }
-
         }
 
 
     </script>
     @*<script>
-    var checkboxes = document.querySelectorAll(".checkbox");
+        var checkboxes = document.querySelectorAll(".checkbox");
 
+        let filtersSection = document.querySelector(".filters-section");
+        var listArray = [];
+        var filterList = document.querySelector(".filter-list");
+        var len = listArray.length;
 
-    let filtersSection = document.querySelector(".filters-section");
+        for (var checkbox of checkboxes) {
+            checkbox.addEventListener("click", function () {
+                if (this.checked == true) {
+                    addElement(this, this.value);
+                }
+                else {
+                    removeElement(this.value);
+                    console.log("unchecked");
+                }
+           })
+        }
 
-    var listArray = [];
+        function addElement(current, value) {
+            let filtersSection = document.querySelector(".filters-section");
 
-    var filterList = document.querySelector(".filter-list");
+            let createdTag = document.createElement('span');
+            createdTag.classList.add('filter-list');
+            createdTag.classList.add('ps-3');
+            createdTag.classList.add('pe-1');
+            createdTag.classList.add('me-2');
+            createdTag.innerHTML = value;
 
-    var len = listArray.length;
+            createdTag.setAttribute('id', value);
+            let crossButton = document.createElement('button');
+            crossButton.classList.add("filter-close-button");
+            let cross = '&times;'
 
-    for (var checkbox of checkboxes) {
-    checkbox.addEventListener("click", function () {
-    if (this.checked == true) {
-    addElement(this, this.value);
-    }
-    else {
+            crossButton.addEventListener('click', function () {
+                let elementToBeRemoved = document.getElementById(value);
 
-    removeElement(this.value);
-    console.log("unchecked");
-    }
-    })
-    }
+                console.log(elementToBeRemoved);
+                console.log(current);
+                elementToBeRemoved.remove();
 
+                current.checked = false;
+            })
 
-    function addElement(current, value) {
-    let filtersSection = document.querySelector(".filters-section");
+            crossButton.innerHTML = cross;
+            // let crossButton = '&times;'
 
-    let createdTag = document.createElement('span');
-    createdTag.classList.add('filter-list');
-    createdTag.classList.add('ps-3');
-    createdTag.classList.add('pe-1');
-    createdTag.classList.add('me-2');
-    createdTag.innerHTML = value;
+            createdTag.appendChild(crossButton);
+            filtersSection.appendChild(createdTag);
+        }
 
-    createdTag.setAttribute('id', value);
-    let crossButton = document.createElement('button');
-    crossButton.classList.add("filter-close-button");
-    let cross = '&times;'
+        function removeElement(value) {
+            let filtersSection = document.querySelector(".filters-section");
 
-
-
-    crossButton.addEventListener('click', function () {
-    let elementToBeRemoved = document.getElementById(value);
-
-    console.log(elementToBeRemoved);
-    console.log(current);
-    elementToBeRemoved.remove();
-
-    current.checked = false;
-
-
-
-
-    })
-
-    crossButton.innerHTML = cross;
-
-
-    // let crossButton = '&times;'
-
-    createdTag.appendChild(crossButton);
-    filtersSection.appendChild(createdTag);
-
-    }
-
-    function removeElement(value) {
-
-    let filtersSection = document.querySelector(".filters-section");
-
-    let elementToBeRemoved = document.getElementById(value);
-    filtersSection.removeChild(elementToBeRemoved);
-
-    }
-
-
-
+            let elementToBeRemoved = document.getElementById(value);
+            filtersSection.removeChild(elementToBeRemoved);
+        }
     </script>*@
     @await RenderSectionAsync("Scripts", required: false)
 </body>

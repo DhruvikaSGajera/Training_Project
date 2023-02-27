@@ -1,0 +1,14 @@
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\bin\Debug\net6.0\CI_Platform.Model.deps.json
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\bin\Debug\net6.0\CI_Platform.Model.runtimeconfig.json
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\bin\Debug\net6.0\CI_Platform.Model.dll
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\bin\Debug\net6.0\CI_Platform.Model.pdb
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\obj\Debug\net6.0\CI_Platform.Model.csproj.AssemblyReference.cache
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\obj\Debug\net6.0\CI_Platform.Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\obj\Debug\net6.0\CI_Platform.Model.AssemblyInfoInputs.cache
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\obj\Debug\net6.0\CI_Platform.Model.AssemblyInfo.cs
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\obj\Debug\net6.0\CI_Platform.Model.csproj.CoreCompileInputs.cache
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\obj\Debug\net6.0\CI_Platform.Model.dll
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\obj\Debug\net6.0\refint\CI_Platform.Model.dll
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\obj\Debug\net6.0\CI_Platform.Model.pdb
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\obj\Debug\net6.0\CI_Platform.Model.genruntimeconfig.cache
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Entity\obj\Debug\net6.0\ref\CI_Platform.Model.dll

@@ -36,8 +36,40 @@ namespace CI_Platform.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult Registration()
         {
+            
+                //string strpass = encryptpass(registerUser.Password);
+                //CIDbContext _db = new CIDbContext();
+                //Models.DataModels.User db = new Models.DataModels.User();
+
+                //if (ModelState.IsValid)
+                //{
+                //    var userexist = _db.Users.Any(x => x.Email == registerUser.Email);
+                //    if (userexist)
+                //    {
+                //        ModelState.AddModelError("username", "User with this name already exists");
+                //        return View(registerUser);
+                //    }
+                //    else
+                //    {
+                //        db.Password = strpass;
+                //        db.Email = registerUser.Email.ToString();
+                //        db.FirstName = registerUser.FirstName.ToString();
+                //        db.LastName = registerUser.LastName.ToString();
+                //        db.PhoneNumber = registerUser.PhoneNumber;
+
+                //        _db.Users.Add(db);
+                //        _db.SaveChanges();
+                //        return RedirectToAction("Login");
+
+                //    }
+
+
+                //}
             return View();
         }
 
