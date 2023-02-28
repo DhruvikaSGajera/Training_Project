@@ -1,4 +1,7 @@
-﻿using CI_Platform.Models;
+﻿using CI_Platform.Controllers;
+using CI_Platform.Entities.ViewModels;
+using CI_Platform.Models;
+using CI_Platform.Repository.Repository.Interface;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,11 +9,21 @@ namespace CI_Platform.Controllers
 {
     public class HomeController : Controller
     {
+        //private readonly ILogger<HomeController> _logger;
+        private readonly ILogin _objILogin;
+        private readonly IUserInterface _objUserInterface;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
+
+        public HomeController(ILogger<HomeController> logger, ILogin objLogin, IUserInterface objUserInterface)
         {
             _logger = logger;
+            _objILogin = objLogin;
+            _objUserInterface = objUserInterface;
         }
 
         public IActionResult Index()
@@ -22,12 +35,58 @@ namespace CI_Platform.Controllers
         {
             return View();
         }
+
         public IActionResult Login()
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Login(LoginViewModel objlogin)
+        {
+            if (ModelState.IsValid)
+            {
+                var listofuser = _objILogin.GetUsers();
+                int validate = _objILogin.validateUser(objlogin);
+                if (validate != 0)
+                {
+                    return RedirectToAction("LandingPage");
+                }
+                else
+                {
+                    ModelState.AddModelError("Email", "Your credentials are wrong");
+                    return View(objlogin);
+                }
+            }
+            else
+            {
+                return View();
+            }
+            return View();
+        }
+
         public IActionResult ForgotPassword()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult ForgotPaasword(ForgotPasswordViewModel objFpvm)
+        {
+            if (ModelState.IsValid)
+            {
+                bool usercheck = _objUserInterface.ValideUserEmail(objFpvm);
+                if (usercheck)
+                {
+
+                    return RedirectToAction("ResetPassword");
+                }
+                else
+                {
+                    ModelState.AddModelError("Email", "User don't Exists");
+                    return View(objFpvm);
+                }
+            }
             return View();
         }
 
@@ -37,40 +96,42 @@ namespace CI_Platform.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        public IActionResult ResetPAssword(ResetPAsswordViewModel objresetuser)
+        {
+            bool success = _objUserInterface.ResetPassword(objresetuser);
+            if (success)
+            {
+                return RedirectToAction("Login");
+            }
+            else
+            {
+                return View();
+            }
+            return View();
+        }
 
         public IActionResult Registration()
-        {
-            
-                //string strpass = encryptpass(registerUser.Password);
-                //CIDbContext _db = new CIDbContext();
-                //Models.DataModels.User db = new Models.DataModels.User();
-
-                //if (ModelState.IsValid)
-                //{
-                //    var userexist = _db.Users.Any(x => x.Email == registerUser.Email);
-                //    if (userexist)
-                //    {
-                //        ModelState.AddModelError("username", "User with this name already exists");
-                //        return View(registerUser);
-                //    }
-                //    else
-                //    {
-                //        db.Password = strpass;
-                //        db.Email = registerUser.Email.ToString();
-                //        db.FirstName = registerUser.FirstName.ToString();
-                //        db.LastName = registerUser.LastName.ToString();
-                //        db.PhoneNumber = registerUser.PhoneNumber;
-
-                //        _db.Users.Add(db);
-                //        _db.SaveChanges();
-                //        return RedirectToAction("Login");
-
-                //    }
-
-
-                //}
+        {        
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult registration(RegistrationViewModel objredistervm)
+        {
+            if (ModelState.IsValid)
+            {
+                bool addUser = _objUserInterface.AddUser(objredistervm);
+                if (addUser)
+                {
+                    return RedirectToAction("Login");
+                }
+                else
+                {
+                    ModelState.AddModelError("Email", "User with this E-mail Exsits");
+                    return View(objredistervm);
+                }
+            }
+            return View(objredistervm);
         }
 
         public IActionResult LandingPage()

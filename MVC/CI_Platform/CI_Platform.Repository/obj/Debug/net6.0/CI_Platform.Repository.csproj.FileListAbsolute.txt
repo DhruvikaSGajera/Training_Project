@@ -12,3 +12,6 @@ E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Repository\obj\Deb
 E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Repository\obj\Debug\net6.0\CI_Platform.Repository.pdb
 E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Repository\obj\Debug\net6.0\CI_Platform.Repository.genruntimeconfig.cache
 E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Repository\obj\Debug\net6.0\ref\CI_Platform.Repository.dll
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Repository\bin\Debug\net6.0\CI_Platform.Entities.dll
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Repository\bin\Debug\net6.0\CI_Platform.Entities.pdb
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Repository\obj\Debug\net6.0\CI_Platform.Repository.csproj.CopyComplete
