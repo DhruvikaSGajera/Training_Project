@@ -1,0 +1,12 @@
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\bin\Debug\net6.0\CI_Platform.Entities.deps.json
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\bin\Debug\net6.0\CI_Platform.Entities.dll
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\bin\Debug\net6.0\CI_Platform.Entities.pdb
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\obj\Debug\net6.0\CI_Platform.Entities.csproj.AssemblyReference.cache
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\obj\Debug\net6.0\CI_Platform.Entities.GeneratedMSBuildEditorConfig.editorconfig
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\obj\Debug\net6.0\CI_Platform.Entities.AssemblyInfoInputs.cache
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\obj\Debug\net6.0\CI_Platform.Entities.AssemblyInfo.cs
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\obj\Debug\net6.0\CI_Platform.Entities.csproj.CoreCompileInputs.cache
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\obj\Debug\net6.0\CI_Platform.Entities.dll
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\obj\Debug\net6.0\refint\CI_Platform.Entities.dll
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\obj\Debug\net6.0\CI_Platform.Entities.pdb
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform.Model\obj\Debug\net6.0\ref\CI_Platform.Entities.dll

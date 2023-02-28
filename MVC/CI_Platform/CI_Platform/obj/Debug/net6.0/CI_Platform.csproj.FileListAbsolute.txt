@@ -115,8 +115,8 @@ E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\bin\Debug\net6.0\r
 E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\bin\Debug\net6.0\CI_Platform.Model.dll
 E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\bin\Debug\net6.0\CI_Platform.Repository.dll
-E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\bin\Debug\net6.0\CI_Platform.Model.pdb
 E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\bin\Debug\net6.0\CI_Platform.Repository.pdb
 E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\obj\Debug\net6.0\CI_Platform.csproj.CopyComplete
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\bin\Debug\net6.0\CI_Platform.Entities.dll
+E:\Final_Project\Training_Project\MVC\CI_Platform\CI_Platform\bin\Debug\net6.0\CI_Platform.Entities.pdb

@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "CI_Platform/1.0.0": {
         "dependencies": {
-          "CI_Platform.Model": "1.0.0",
+          "CI_Platform.Entities": "1.0.0",
           "CI_Platform.Repository": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3",
@@ -701,13 +701,9 @@
           }
         }
       },
-      "CI_Platform.Model/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3"
-        },
+      "CI_Platform.Entities/1.0.0": {
         "runtime": {
-          "CI_Platform.Model.dll": {}
+          "CI_Platform.Entities.dll": {}
         }
       },
       "CI_Platform.Repository/1.0.0": {
@@ -1203,7 +1199,7 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
-    "CI_Platform.Model/1.0.0": {
+    "CI_Platform.Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

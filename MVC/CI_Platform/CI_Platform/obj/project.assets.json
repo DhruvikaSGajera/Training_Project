@@ -1156,18 +1156,14 @@
           }
         }
       },
-      "CI_Platform.Model/1.0.0": {
+      "CI_Platform.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3"
-        },
         "compile": {
-          "bin/placeholder/CI_Platform.Model.dll": {}
+          "bin/placeholder/CI_Platform.Entities.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CI_Platform.Model.dll": {}
+          "bin/placeholder/CI_Platform.Entities.dll": {}
         }
       },
       "CI_Platform.Repository/1.0.0": {
@@ -3529,10 +3525,10 @@
         "version.txt"
       ]
     },
-    "CI_Platform.Model/1.0.0": {
+    "CI_Platform.Entities/1.0.0": {
       "type": "project",
-      "path": "../CI_Platform.Entity/CI_Platform.Model.csproj",
-      "msbuildProject": "../CI_Platform.Entity/CI_Platform.Model.csproj"
+      "path": "../CI_Platform.Entities/CI_Platform.Entities.csproj",
+      "msbuildProject": "../CI_Platform.Entities/CI_Platform.Entities.csproj"
     },
     "CI_Platform.Repository/1.0.0": {
       "type": "project",
@@ -3542,7 +3538,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "CI_Platform.Model >= 1.0.0",
+      "CI_Platform.Entities >= 1.0.0",
       "CI_Platform.Repository >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.3",
@@ -3576,8 +3572,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform.Entity\\CI_Platform.Model.csproj": {
-              "projectPath": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform.Entity\\CI_Platform.Model.csproj"
+            "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform.Entities\\CI_Platform.Entities.csproj": {
+              "projectPath": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform.Entities\\CI_Platform.Entities.csproj"
             },
             "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform.Repository\\CI_Platform.Repository.csproj": {
               "projectPath": "E:\\Final_Project\\Training_Project\\MVC\\CI_Platform\\CI_Platform.Repository\\CI_Platform.Repository.csproj"
