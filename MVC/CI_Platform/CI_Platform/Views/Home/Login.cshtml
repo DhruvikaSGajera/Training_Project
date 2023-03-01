@@ -5,6 +5,8 @@
     Layout = "~/Views/Shared/_none.cshtml";
 
 }
+@model CI_Platform.Entities.ViewModels.LoginViewModel
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,19 +76,20 @@
             <div class="col-lg-4 col-md-12 col-sm-12 my-auto  my-md-auto">
                 <div class="card border-0 smscreen">
                     <div class="card-body mx-4 ">
-                        <form>
+                        <form  asp-action="Login" method="Post">
                             <div >
                                 <label for="Email" class="form-label font-color">Email address</label>
-                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
+                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" asp-for="Email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
                             </div>
 
                             <div class="mb-1">
                                 <label for="Password" class="form-label font-color">Password</label>
-                                <input type="password" class="form-control" id="Password" placeholder="Password">
+                                <input type="password" class="form-control" id="Password" placeholder="Password" asp-for="Password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
                             </div>
 
-                            <button type="button" class="login-btn mt-2">Login</button>
+                            <button type="submit" class="login-btn mt-2">Login</button>
 
                             <a asp-controller="Home" asp-action="ForgotPassword"
                                 class="link link1 d-flex justify-content-center mt-2 font-color">Lost Your Password?</a>

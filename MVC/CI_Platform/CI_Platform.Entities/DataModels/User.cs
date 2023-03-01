@@ -15,7 +15,7 @@ public partial class User
 
     public string Password { get; set; } = null!;
 
-    public long PhoneNumber { get; set; }
+    public string PhoneNumber { get; set; } = null!;
 
     public string? Avatar { get; set; }
 
@@ -25,7 +25,7 @@ public partial class User
 
     public string? Department { get; set; }
 
-    public long CityId { get; set; }
+    public long? CityId { get; set; }
 
     public long? CountryId { get; set; }
 
@@ -43,7 +43,7 @@ public partial class User
 
     public DateTime? DeletedAt { get; set; }
 
-    public virtual City City { get; set; } = null!;
+    public virtual City? City { get; set; }
 
     public virtual ICollection<Comment> Comments { get; } = new List<Comment>();
 

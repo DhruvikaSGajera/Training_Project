@@ -12,8 +12,10 @@ namespace CI_Platform.Repository.Repository.Interface
     {
         public bool AddUser(RegistrationViewModel objuservm);
 
-        public bool ValideUserEmail(ForgotPasswordViewModel objFpvm);
+        public bool ValideUserEmail(ForgotPasswordViewModel objFpvm, string token);
 
-        public bool ResetPassword(ResetPAsswordViewModel objresetuser);
+        public bool ResetPassword(string email, string token);
+
+        public bool updatePassword(ResetPasswordViewModel objreset);
     }
 }

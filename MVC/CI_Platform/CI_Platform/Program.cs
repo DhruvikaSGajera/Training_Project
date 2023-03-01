@@ -1,7 +1,14 @@
+using CI_Platform.Entities.DataModels;
+using CI_Platform.Repository.Repository;
+using CI_Platform.Repository.Repository.Interface;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<CIDbContext>();
+builder.Services.AddScoped<ILogin, Login>();
+builder.Services.AddScoped<IUserInterface, UserInterface>();
 
 var app = builder.Build();
 

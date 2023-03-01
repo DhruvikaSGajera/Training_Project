@@ -1,15 +1,10 @@
 ﻿using CI_Platform.Entities.DataModels;
 using CI_Platform.Entities.ViewModels;
 using CI_Platform.Repository.Repository.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CI_Platform.Repository.Repository
 {
-    public class UserInterface:IUserInterface
+    public class UserInterface : IUserInterface
     {
         private readonly CIDbContext _objdb;
 
@@ -19,7 +14,7 @@ namespace CI_Platform.Repository.Repository
         }
         public bool AddUser(RegistrationViewModel objuser)
         {
-           var userexsists= _objdb.Users.Where(a => a.Email.Equals(objuser.Email)).FirstOrDefault();
+            var userexsists = _objdb.Users.Where(a => a.Email.Equals(objuser.Email)).FirstOrDefault();
             if (userexsists == null)
             {
                 var user = new User()
@@ -40,12 +35,21 @@ namespace CI_Platform.Repository.Repository
                 return false;
             }
         }
-        public bool ValideUserEmail(ForgotPasswordViewModel objFpvm)
+        public bool ValideUserEmail(ForgotPasswordViewModel objFpvm, string token)
         {
             var userexsists = _objdb.Users.Where(a => a.Email.Equals(objFpvm.Email)).FirstOrDefault();
             if (userexsists != null)
             {
-                
+                // Store the token in the password resets table with the user's email
+                var passwordReset_ = new PasswordReset()
+                {
+                    Email = objFpvm.Email,
+                    Token = token
+                };
+                _objdb.PasswordResets.Add(passwordReset_);
+                _objdb.SaveChanges();
+
+
                 return true;
             }
             else
@@ -54,26 +58,37 @@ namespace CI_Platform.Repository.Repository
             }
         }
 
-        public bool ResetPassword(ResetPAsswordViewModel objresetuser)
+        public bool ResetPassword(string email, string token)
         {
-            var userexsists = _objdb.Users.Where(a => a.Email.Equals(objresetuser.Email)).FirstOrDefault();
-            if (userexsists != null)
-            {
-                var user = new User()
-                {
-                    Email=objresetuser.Email,
-                    Password = objresetuser.Password,
+            var userexsists = _objdb.PasswordResets.Where(a => a.Email.Equals(email) && a.Token.Equals(token)).FirstOrDefault();
 
-                };
-                _objdb.Users.Update(user);
+            if (userexsists == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+
+        }
+
+        public bool updatePassword(ResetPasswordViewModel objreset)
+        {
+            var userexsists = _objdb.Users.Where(a => a.Email.Equals(objreset.Email)).FirstOrDefault();
+            if (userexsists == null)
+            {
+                return false;
+            }
+            else
+            {
+                userexsists.Password = objreset.Password;
+                _objdb.Users.Update(userexsists);
                 _objdb.SaveChanges();
                 return true;
             }
-            else
-            {
-                return false;
-            }
-
         }
+
+
     }
 }

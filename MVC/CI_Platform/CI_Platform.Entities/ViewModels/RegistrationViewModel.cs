@@ -24,9 +24,10 @@ namespace CI_Platform.Entities.ViewModels
         [Required]
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Password doesn't match.")]
-        public string ConfirmPassowrd { get; set; } = null!;
+        public string ConfirmPassword { get; set; } = null!;
 
-        public long PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
+
 
     }
 }

@@ -3,8 +3,8 @@
 *@
 @{
     Layout = "~/Views/Shared/_none.cshtml";
-
 }
+@model CI_Platform.Entities.ViewModels.RegistrationViewModel
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,47 +78,49 @@
             <div class="col-lg-4 col-sm-12 col-md-12 my-auto my-md-auto">
                 <div class="card border-0 smscreen">
                     <div class="card-body mx-4">
-                        <form>
+                        <form asp-action="Registration" method="Post">
                             <div class="mb-1">
                                 <label for="First-name" class="form-label font-color">Full Name</label>
-                                <input type="text" class="form-control" id="first_name" aria-describedby="emailHelp"
-                                    placeholder="Enter Firstname">
+                                <input type="text" class="form-control" id="first_name" aria-describedby="emailHelp" placeholder="Enter Firstname" asp-for="FirstName">
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                                
                             </div>
 
                             <div class="mb-1">
                                 <label for="Last_name" class="form-label font-color">Last Name</label>
-                                <input type="text" class="form-control" id="Last_name" aria-describedby="emailHelp"
-                                    placeholder="Enter Lastname">
+                                <input type="text" class="form-control" id="Last_name"  asp-for="LastName" aria-describedby="emailHelp" placeholder="Enter Lastname">
+                                <span asp-validation-for="LastName" class="text-danger"></span>
                             </div>
 
                             <div class="mb-1">
-                                <label for="Email" class="form-label font-color">Phone Number</label>
-                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
-                                    placeholder="Enter Phone Number">
+                                <label for="phoneNumber" class="form-label font-color">Phone Number</label>
+                                <input type="Number" class="form-control" id="phoneNumber"  asp-for="PhoneNumber" aria-describedby="emailHelp" placeholder="Enter Phone Number">
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                             </div>
 
                             <div class="mb-1">
                                 <label for="Email" class="form-label font-color">Email address</label>
-                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
+                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" asp-for="Email" placeholder="Enter email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
                             </div>
 
                             <div class="mb-1">
                                 <label for="Password" class="form-label font-color">Password</label>
-                                <input type="password" class="form-control" id="Password" placeholder="Password">
+                                <input type="password" class="form-control" id="Password" placeholder="Password" asp-for="Password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
                             </div>
 
                             <div class="mb-1">
                                 <label for="confirm_Password" class="form-label font-color">Confrim Password</label>
-                                <input type="password" class="form-control" id="confirm_Password"
-                                    placeholder="Reenter Password">
+                                <input type="password" class="form-control" id="confirm_Password" placeholder="Reenter Password" asp-for="ConfirmPassword">
+                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                             </div>
-                            <button type="button" class="register-btn mt-2">Register</button>
+                           
+                            <button type="submit" class="register-btn mt-2">Register</button>
 
-                            <a asp-controller="Home" asp-action="ForgotPassword" class="link d-flex justify-content-center mt-2 font-color">Lost
-                                Your Password?</a>
-                            <p class=" d-flex justify-content-center mt-2">Already Registered? <a asp-controller="Home" asp-action="Login"
-                                    class="link">Login Now</a></p>
+                            <a asp-controller="Home" asp-action="ForgotPassword" class="link d-flex justify-content-center mt-2 font-color">Lost Your Password?</a>
+                            
+                            <p class=" d-flex justify-content-center mt-2">Already Registered? <a asp-controller="Home" asp-action="Login" class="link">Login Now</a></p>
 
                             <a class="d-flex justify-content-center font-color privacy4 link">Privacy Policy</a>
 

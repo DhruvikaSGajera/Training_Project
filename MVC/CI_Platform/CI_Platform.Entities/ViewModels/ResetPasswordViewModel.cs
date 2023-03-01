@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CI_Platform.Entities.ViewModels
 {
-    public class ResetPAsswordViewModel
+    public class ResetPasswordViewModel
     {
         [Required]
         [EmailAddress]
@@ -20,5 +20,7 @@ namespace CI_Platform.Entities.ViewModels
         [Required]
         [Compare("Password",ErrorMessage ="Don't match with Password.")]
         public string ConfirmPassword { get; set; } = null!;
+
+        public string Token { get; set; }
     }
 }

@@ -4,20 +4,17 @@ using CI_Platform.Models;
 using CI_Platform.Repository.Repository.Interface;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Net.Mail;
+using System.Net;
 
 namespace CI_Platform.Controllers
 {
     public class HomeController : Controller
     {
-        //private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HomeController> _logger;
         private readonly ILogin _objILogin;
         private readonly IUserInterface _objUserInterface;
-        private readonly ILogger<HomeController> _logger;
-
-        //public HomeController(ILogger<HomeController> logger)
-        //{
-        //    _logger = logger;
-        //}
+        //private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger, ILogin objLogin, IUserInterface objUserInterface)
         {
@@ -75,11 +72,35 @@ namespace CI_Platform.Controllers
         {
             if (ModelState.IsValid)
             {
-                bool usercheck = _objUserInterface.ValideUserEmail(objFpvm);
+                var Email = objFpvm.Email;
+
+                var token = Guid.NewGuid().ToString();
+                bool usercheck = _objUserInterface.ValideUserEmail(objFpvm, token);
                 if (usercheck)
                 {
 
-                    return RedirectToAction("ResetPassword");
+                    // Send an email with the password reset link to the user's email address
+                    var resetLink = Url.Action("ResetPassword", "Home", new { email = Email, token }, Request.Scheme);
+                    // Send email to user with reset password link
+                    // ...
+                    var fromAddress = new MailAddress("gajeravirajpareshbhai@gmail.com", "Sender Name");
+                    var toAddress = new MailAddress(objFpvm.Email);
+                    var subject = "Password reset request";
+                    var body = $"Hi,<br /><br />Please click on the following link to reset your password:<br /><br /><a href='{resetLink}'>{resetLink}</a>";
+                    var message = new MailMessage(fromAddress, toAddress)
+                    {
+                        Subject = subject,
+                        Body = body,
+                        IsBodyHtml = true
+                    };
+                    var smtpClient = new SmtpClient("smtp.gmail.com", 587)
+                    {
+                        UseDefaultCredentials = false,
+                        Credentials = new NetworkCredential("bhavsardimple7@gmail.com", "kdgoqmqtotntuvvu"),
+                        EnableSsl = true
+                    };
+                    smtpClient.Send(message);
+                    return RedirectToAction("Login");
                 }
                 else
                 {
@@ -90,25 +111,58 @@ namespace CI_Platform.Controllers
             return View();
         }
 
+        //[HttpPost]
+        //public IActionResult ForgotPassword(ForgotPasswordViewModel objFpvm)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        bool usercheck = _objUserInterface.ValideUserEmail(objFpvm);
+        //        if (usercheck)
+        //        {
+
+        //            return RedirectToAction("ResetPassword");
+        //        }
+        //        else
+        //        {
+        //            ModelState.AddModelError("Email", "User don't Exists");
+        //            return View(objFpvm);
+        //        }
+        //    }
+        //    return View();
+        //}
+
         public IActionResult ResetPassword()
         {
             return View();
         }
 
-        [HttpPost]
-        public IActionResult ResetPAssword(ResetPAsswordViewModel objresetuser)
+        //[HttpPost]
+        //public IActionResult ResetPassword(ResetPasswordViewModel objresetuser)
+        //{
+        //    bool success = _objUserInterface.ResetPassword(objresetuser);
+        //    if (success)
+        //    {
+        //        return RedirectToAction("Login");
+        //    }
+        //    else
+        //    {
+        //        return View();
+        //    }
+        //    return View();
+        //}
+
+        [HttpGet]
+        public IActionResult ResetPassword(string email, string token)
         {
-            bool success = _objUserInterface.ResetPassword(objresetuser);
-            if (success)
+
+            var model = new ResetPasswordViewModel
             {
-                return RedirectToAction("Login");
-            }
-            else
-            {
-                return View();
-            }
-            return View();
-        }
+                Email = email,
+                Token = token,
+
+            };
+            return View(model);
+                    }
 
         public IActionResult Registration()
         {        
@@ -116,7 +170,7 @@ namespace CI_Platform.Controllers
         }
 
         [HttpPost]
-        public IActionResult registration(RegistrationViewModel objredistervm)
+        public IActionResult Registration(RegistrationViewModel objredistervm)
         {
             if (ModelState.IsValid)
             {
