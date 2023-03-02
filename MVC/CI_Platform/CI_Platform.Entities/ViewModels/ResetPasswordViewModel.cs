@@ -18,7 +18,7 @@ namespace CI_Platform.Entities.ViewModels
         public string Password { get; set; } = null!;
 
         [Required]
-        [Compare("Password",ErrorMessage ="Don't match with Password.")]
+        [Compare("Password",ErrorMessage = "Password doesn't match")]
         public string ConfirmPassword { get; set; } = null!;
 
         public string Token { get; set; }

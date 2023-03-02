@@ -16,6 +16,6 @@ namespace CI_Platform.Repository.Repository.Interface
 
         public bool ResetPassword(string email, string token);
 
-        public bool updatePassword(ResetPasswordViewModel objreset);
+        public bool UpdatePassword(ResetPasswordViewModel objreset);
     }
 }

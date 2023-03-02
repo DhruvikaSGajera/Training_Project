@@ -631,10 +631,15 @@ public partial class CIDbContext : DbContext
 
         modelBuilder.Entity<PasswordReset>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("password_reset");
+            entity.HasKey(e => e.Token);
 
+            entity.ToTable("password_reset");
+
+            entity.Property(e => e.Token)
+                .HasMaxLength(191)
+                .IsUnicode(false)
+                .HasDefaultValueSql("('None')")
+                .HasColumnName("token");
             entity.Property(e => e.CreatedAt)
                 .IsRowVersion()
                 .IsConcurrencyToken()
@@ -644,11 +649,6 @@ public partial class CIDbContext : DbContext
                 .IsUnicode(false)
                 .HasDefaultValueSql("('None')")
                 .HasColumnName("email");
-            entity.Property(e => e.Token)
-                .HasMaxLength(191)
-                .IsUnicode(false)
-                .HasDefaultValueSql("('None')")
-                .HasColumnName("token");
         });
 
         modelBuilder.Entity<Skill>(entity =>

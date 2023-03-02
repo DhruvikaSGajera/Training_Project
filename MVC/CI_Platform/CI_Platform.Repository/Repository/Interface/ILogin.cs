@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 namespace CI_Platform.Repository.Repository.Interface
 {
    public interface ILogin
-    {
-        public IEnumerable<User> GetUsers();
+   {
+        public IEnumerable<User> getUsers();
         public int validateUser(LoginViewModel objlogin);
-    }
+   }
 }

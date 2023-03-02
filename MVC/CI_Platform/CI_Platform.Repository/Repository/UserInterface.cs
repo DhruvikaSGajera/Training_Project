@@ -23,13 +23,14 @@ namespace CI_Platform.Repository.Repository
                     LastName = objuser.LastName,
                     PhoneNumber = objuser.PhoneNumber,
                     Email = objuser.Email,
-                    Password = objuser.Password,
-
+                    Password = objuser.Password
                 };
+
                 _objdb.Users.Add(user);
                 _objdb.SaveChanges();
                 return true;
             }
+
             else
             {
                 return false;
@@ -48,8 +49,6 @@ namespace CI_Platform.Repository.Repository
                 };
                 _objdb.PasswordResets.Add(passwordReset_);
                 _objdb.SaveChanges();
-
-
                 return true;
             }
             else
@@ -70,10 +69,9 @@ namespace CI_Platform.Repository.Repository
             {
                 return true;
             }
-
         }
 
-        public bool updatePassword(ResetPasswordViewModel objreset)
+        public bool UpdatePassword(ResetPasswordViewModel objreset)
         {
             var userexsists = _objdb.Users.Where(a => a.Email.Equals(objreset.Email)).FirstOrDefault();
             if (userexsists == null)
@@ -88,7 +86,5 @@ namespace CI_Platform.Repository.Repository
                 return true;
             }
         }
-
-
     }
 }

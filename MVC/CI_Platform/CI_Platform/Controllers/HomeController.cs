@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Net.Mail;
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CI_Platform.Controllers
 {
@@ -14,7 +15,6 @@ namespace CI_Platform.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly ILogin _objILogin;
         private readonly IUserInterface _objUserInterface;
-        //private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger, ILogin objLogin, IUserInterface objUserInterface)
         {
@@ -43,7 +43,7 @@ namespace CI_Platform.Controllers
         {
             if (ModelState.IsValid)
             {
-                var listofuser = _objILogin.GetUsers();
+                var listofuser = _objILogin.getUsers();
                 int validate = _objILogin.validateUser(objlogin);
                 if (validate != 0)
                 {
@@ -51,14 +51,14 @@ namespace CI_Platform.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("Email", "Your credentials are wrong");
+                    ModelState.AddModelError("Password", "Invalid credentials");
                     return View(objlogin);
                 }
             }
-            else
-            {
-                return View();
-            }
+            //else
+            //{
+            //    return View();
+            //}
             return View();
         }
 
@@ -68,7 +68,7 @@ namespace CI_Platform.Controllers
         }
 
         [HttpPost]
-        public IActionResult ForgotPaasword(ForgotPasswordViewModel objFpvm)
+        public IActionResult ForgotPassword(ForgotPasswordViewModel objFpvm)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace CI_Platform.Controllers
                     // Send an email with the password reset link to the user's email address
                     var resetLink = Url.Action("ResetPassword", "Home", new { email = Email, token }, Request.Scheme);
                     // Send email to user with reset password link
-                    // ...
+                   
                     var fromAddress = new MailAddress("gajeravirajpareshbhai@gmail.com", "Sender Name");
                     var toAddress = new MailAddress(objFpvm.Email);
                     var subject = "Password reset request";
@@ -96,7 +96,7 @@ namespace CI_Platform.Controllers
                     var smtpClient = new SmtpClient("smtp.gmail.com", 587)
                     {
                         UseDefaultCredentials = false,
-                        Credentials = new NetworkCredential("bhavsardimple7@gmail.com", "kdgoqmqtotntuvvu"),
+                        Credentials = new NetworkCredential("dhruvikagajera@gmail.com", "kdgoqmqtotntuvvu"),
                         EnableSsl = true
                     };
                     smtpClient.Send(message);
@@ -104,57 +104,40 @@ namespace CI_Platform.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("Email", "User don't Exists");
+                    ModelState.AddModelError("Email", "User doesn't Exists");
                     return View(objFpvm);
                 }
             }
             return View();
         }
 
-        //[HttpPost]
-        //public IActionResult ForgotPassword(ForgotPasswordViewModel objFpvm)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        bool usercheck = _objUserInterface.ValideUserEmail(objFpvm);
-        //        if (usercheck)
-        //        {
-
-        //            return RedirectToAction("ResetPassword");
-        //        }
-        //        else
-        //        {
-        //            ModelState.AddModelError("Email", "User don't Exists");
-        //            return View(objFpvm);
-        //        }
-        //    }
-        //    return View();
-        //}
-
         public IActionResult ResetPassword()
         {
             return View();
         }
 
-        //[HttpPost]
-        //public IActionResult ResetPassword(ResetPasswordViewModel objresetuser)
-        //{
-        //    bool success = _objUserInterface.ResetPassword(objresetuser);
-        //    if (success)
-        //    {
-        //        return RedirectToAction("Login");
-        //    }
-        //    else
-        //    {
-        //        return View();
-        //    }
-        //    return View();
-        //}
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public IActionResult ResetPassword(ResetPasswordViewModel resetvm)
+        {
+            bool success = _objUserInterface.ResetPassword(resetvm.Email, resetvm.Token);
+            if (success)
+            {
+                bool update = _objUserInterface.UpdatePassword(resetvm);
+                ViewBag.Message = "Successfully Changed Password !!";
+            }
+            else
+            {
+                ViewBag.Message = "Something went Wrong!";
+            }
+            return View();
+        }
 
         [HttpGet]
         public IActionResult ResetPassword(string email, string token)
         {
-
             var model = new ResetPasswordViewModel
             {
                 Email = email,
@@ -162,7 +145,7 @@ namespace CI_Platform.Controllers
 
             };
             return View(model);
-                    }
+        }
 
         public IActionResult Registration()
         {        
@@ -181,7 +164,7 @@ namespace CI_Platform.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("Email", "User with this E-mail Exsits");
+                    ModelState.AddModelError("Email", "User with this E-mail already Exsits");
                     return View(objredistervm);
                 }
             }

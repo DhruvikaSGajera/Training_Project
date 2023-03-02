@@ -26,6 +26,7 @@ namespace CI_Platform.Entities.ViewModels
         [Compare("Password", ErrorMessage = "Password doesn't match.")]
         public string ConfirmPassword { get; set; } = null!;
 
+        [RegularExpression("^([0-9]{10})$",ErrorMessage="Invalid Phone Number")]
         public string PhoneNumber { get; set; }
 
 

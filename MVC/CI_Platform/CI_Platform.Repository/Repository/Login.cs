@@ -13,7 +13,7 @@ namespace CI_Platform.Repository.Repository
         {
             _objdb = objdb;
         }
-        public IEnumerable<User> GetUsers()
+        public IEnumerable<User> getUsers()
         {
             return _objdb.Users.ToList();
         }
@@ -22,7 +22,6 @@ namespace CI_Platform.Repository.Repository
             var user = _objdb.Users.Where(a => a.Email.Equals(objlogin.Email)).FirstOrDefault();
             if (user != null)
             {
-
                 var obj = _objdb.Users.Where(a => a.Email.Equals(objlogin.Email) && a.Password.Equals(objlogin.Password)).FirstOrDefault();
                 if (obj != null)
                 {
